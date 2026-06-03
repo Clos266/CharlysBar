@@ -1,0 +1,127 @@
+import { drinks } from "./data/drinks"
+import { useState } from "react"
+import DrinkCard from "./components/DrinkCard"
+import DrinkDetails from "./components/DrinkDetails"
+
+export default function App() {
+
+  const [selectedDrink, setSelectedDrink] = useState(null)
+
+  const [selectedCategory, setSelectedCategory] =
+    useState("All drinks")
+
+  const categories = [
+    "All drinks",
+    "Cocktail",
+    "Refreshing",
+    "Spritz",
+    "Sour",
+    "Negroni",
+    "Longdrink",
+    "Alcohol Free",
+    "Summer Cocktail",
+    "Gin",
+    "Rum",
+    "Whisky",
+    "Beer",
+    "Cigar",
+  ]
+
+  const filteredDrinks =
+    selectedCategory === "All drinks"
+      ? drinks
+      : drinks.filter(
+          (drink) =>
+            drink.category === selectedCategory
+        )
+
+  const buttonStyle = `
+    bg-zinc-900
+    text-white
+    px-5
+    py-2
+    rounded-full
+    hover:bg-amber-500
+    hover:text-black
+    transition
+  `
+
+  const activeButtonStyle = `
+    bg-amber-500
+    text-black
+    px-5
+    py-2
+    rounded-full
+    transition
+  `
+
+  return (
+
+    <div className="min-h-screen bg-black px-4 py-8 md:p-10">
+
+      <h1
+        className="
+          text-5xl
+          md:text-6xl
+          font-black
+          text-white
+          mb-10
+        "
+      >
+        Charly's Bar
+      </h1>
+
+      <div className="flex flex-wrap gap-4 mb-10">
+
+        {categories.map((category) => (
+
+          <button
+            key={category}
+            className={
+              selectedCategory === category
+                ? activeButtonStyle
+                : buttonStyle
+            }
+            onClick={() => setSelectedCategory(category)}
+          >
+            {category}
+          </button>
+
+        ))}
+
+      </div>
+
+      <ul
+        className="
+          grid
+          grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-4
+          gap-8
+        "
+      >
+
+        {filteredDrinks.map((drink) => (
+
+          <DrinkCard
+            key={drink.id}
+            drink={drink}
+            setSelectedDrink={setSelectedDrink}
+          />
+
+        ))}
+
+      </ul>
+
+      {selectedDrink && (
+
+        <DrinkDetails
+          drink={selectedDrink}
+          closeModal={() => setSelectedDrink(null)}
+        />
+
+      )}
+
+    </div>
+  )
+}
