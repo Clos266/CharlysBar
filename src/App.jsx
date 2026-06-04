@@ -10,6 +10,8 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] =
     useState("All drinks")
 
+  const [searchTerm, setSearchTerm] = useState("")
+
   const categories = [
     "All drinks",
     "Cocktail",
@@ -27,13 +29,19 @@ export default function App() {
     "Cigar",
   ]
 
-  const filteredDrinks =
-    selectedCategory === "All drinks"
-      ? drinks
-      : drinks.filter(
-          (drink) =>
-            drink.category === selectedCategory
-        )
+  const filteredDrinks = drinks.filter((drink) => {
+
+    const matchesCategory =
+      selectedCategory === "All drinks" ||
+      drink.category === selectedCategory
+
+    const matchesSearch =
+      drink.name
+        .toLowerCase()
+        .includes(searchTerm.toLowerCase())
+
+    return matchesCategory && matchesSearch
+  })
 
   const buttonStyle = `
     bg-zinc-900
@@ -70,6 +78,27 @@ export default function App() {
       >
         Charly's Bar
       </h1>
+
+      <input
+        type="text"
+        placeholder="Search drink..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        className="
+          w-full
+          md:w-96
+          px-4
+          py-3
+          mb-8
+          rounded-full
+          bg-zinc-900
+          text-white
+          border
+          border-zinc-700
+          focus:outline-none
+          focus:border-amber-500
+        "
+      />
 
       <div className="flex flex-wrap gap-4 mb-10">
 

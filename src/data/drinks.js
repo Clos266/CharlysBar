@@ -9,7 +9,7 @@ export const drinks = [
     name: "Violet Spritz",
     category: "Spritz",
     price: 9.4,
-    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
+    image: "https://a.storyblok.com/f/287256641685145/1428x1655/55d95faf0e/violet-alkoholfrei-mit-falstaff.webp/m/1200x0",
     description: "Floral spritz with secco and orange.",
     garnish: "Orange",
     recipe: [
@@ -25,7 +25,7 @@ export const drinks = [
     name: "Aperol Spritz",
     category: "Spritz",
     price: 9.4,
-    image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd",
+    image: "https://www.aperol.com/app/uploads/sites/14/2026/03/Aperitivo.webp",
     description: "Classic Italian aperitif spritz.",
     garnish: "Orange",
     recipe: [
@@ -41,7 +41,7 @@ export const drinks = [
     name: "Bodensee Spritz",
     category: "Spritz",
     price: 9.4,
-    image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhlCLs89kCEzkWr0vS2svnALKhDlagSIHTg&s",
     description: "Refreshing sparkling wine spritz.",
     garnish: "Orange",
     recipe: [
@@ -56,7 +56,7 @@ export const drinks = [
     name: "Limoncello Spritz",
     category: "Spritz",
     price: 9.4,
-    image: "https://images.unsplash.com/photo-1497534446932-c925b458314e",
+    image: "https://www.savoringitaly.com/wp-content/uploads/2026/01/limoncello-spritz.jpg",
     description: "Fresh citrus spritz with limoncello.",
     garnish: "Lemon",
     recipe: [
@@ -71,7 +71,7 @@ export const drinks = [
     name: "Campari Spritz",
     category: "Spritz",
     price: 9.4,
-    image: "https://images.unsplash.com/photo-1551024709-8f23befc6cf7",
+    image: "https://c.rewe-static.de/35958854/2/35958854.png?impolicy=rds&im=Resize,width=1480",
     description: "Bittersweet Campari spritz.",
     garnish: "Orange",
     recipe: [
@@ -87,7 +87,7 @@ export const drinks = [
     name: "Hugo",
     category: "Refreshing",
     price: 9.4,
-    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
+    image: "https://justdrinks.se/wp-content/uploads/2025/06/hugo-spritz-flader-mynta-lime-syrlig-drink.webp",
     description: "Light elderflower spritz with mint.",
     garnish: "Mint",
     recipe: [
@@ -103,7 +103,7 @@ export const drinks = [
     name: "Lillet Wild Berry",
     category: "Refreshing",
     price: 9.4,
-    image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187",
+    image: "https://menu.hansimglueck-burgergrill.de/api/image?uuid=c4aab56c-bf85-4a37-4cf7-3947fd672700&preset=og",
     description: "Fruity Lillet aperitif with berries.",
     garnish: "Berries",
     recipe: [
@@ -117,7 +117,7 @@ export const drinks = [
     name: "Rosato Mio",
     category: "Refreshing",
     price: 9.4,
-    image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd",
+    image: "https://i.falstaff.com/storage/2023/01/Rosato-Mio-c-Pernod-Ricard-1320.jpg?width=1200&aspect_ratio=40:21&crop_gravity=north&format=jpg",
     description: "Rosato aperitif with sparkling wine and mint.",
     garnish: "Mint & Orange",
     recipe: [
@@ -135,7 +135,7 @@ export const drinks = [
     name: "Pina Colada",
     category: "Cocktail",
     price: 12.1,
-    image: "https://images.unsplash.com/photo-1570628421055-4d30de868b8f",
+    image: "https://barschool.b-cdn.net/wp-content/uploads/2022/05/25-Pina-Colada.jpg",
     description: "Creamy tropical cocktail with pineapple and coconut.",
     garnish: "Pineapple",
     recipe: [
@@ -151,7 +151,7 @@ export const drinks = [
     name: "Long Island Ice Tea",
     category: "Cocktail",
     price: 13.3,
-    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
+    image: "https://dinnerthendessert.com/wp-content/uploads/2023/06/Long-Island-Iced-Tea-7.jpg",
     description: "Strong cocktail with multiple spirits.",
     garnish: "Lime",
     recipe: [
@@ -170,7 +170,7 @@ export const drinks = [
     name: "White Russian",
     category: "Cocktail",
     price: 9.8,
-    image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd",
+    image: "https://img.taste.com.au/vCBqmo3Z/taste/2024/04/white-russian-recipe-198100-2.jpeg",
     description: "Smooth vodka cocktail with coffee liqueur.",
     garnish: "Cream",
     recipe: [
@@ -185,7 +185,7 @@ export const drinks = [
     name: "Cosmopolitan",
     category: "Cocktail",
     price: 11.3,
-    image: "https://images.unsplash.com/photo-1570598912132-0ba1dc952b7d",
+    image: "https://punchdrink.com/wp-content/uploads/2020/03/Article-Ultimate-Cosmo-Cosmopolitan-Cocktail-Recipe.jpg?w=1024",
     description: "Elegant cranberry vodka cocktail.",
     garnish: "Lime",
     recipe: [
@@ -201,7 +201,7 @@ export const drinks = [
     name: "Espresso Martini",
     category: "Cocktail",
     price: 12.4,
-    image: "https://images.unsplash.com/photo-1514361892635-6f5b8d7d8b4c",
+    image: "https://www.foodandwine.com/thmb/DJb_2i45O5SinNYQPIC8uOiNn0g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Espresso-Martini-FT-Recipe0126-bc66dfee7afa4bd8bda8f4f0900868bb.jpg",
     description: "Coffee-forward martini with espresso.",
     garnish: "Coffee Beans",
     recipe: [
@@ -216,7 +216,7 @@ export const drinks = [
     name: "Pornstar Martini",
     category: "Cocktail",
     price: 15.9,
-    image: "https://images.unsplash.com/photo-1605270012917-bf157c5a9541",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvuEch6O8GlTi1HAqImF70j399r21AEFTCFg&s",
     description: "Passion fruit vanilla cocktail with champagne.",
     garnish: "Passion Fruit",
     recipe: [
@@ -232,7 +232,7 @@ export const drinks = [
     name: "Mai Tai",
     category: "Cocktail",
     price: 11.3,
-    image: "https://images.unsplash.com/photo-1587223962930-cb7f31384c19",
+    image: "https://modernquests.com/cdn/shop/files/MaiTaiCocktailGlasses490ml_Setof4-5.jpg?v=1768385314&width=800",
     description: "Classic tiki cocktail with almond syrup.",
     garnish: "Mint",
     recipe: [
@@ -248,7 +248,7 @@ export const drinks = [
     name: "Americano",
     category: "Cocktail",
     price: 9.8,
-    image: "https://images.unsplash.com/photo-1551024709-8f23befc6cf7",
+    image: "https://es.inshaker.com/uploads/cocktail/promo/16/square_1580912079-Americano_______960_600.jpg",
     description: "Classic Italian aperitif cocktail.",
     garnish: "Orange",
     recipe: [
@@ -279,7 +279,7 @@ export const drinks = [
     name: "Gin Fizz",
     category: "Cocktail",
     price: 10.2,
-    image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187",
+    image: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/tom-collins-04badba.jpg?quality=90&resize=440,400",
     description: "Refreshing gin cocktail with soda.",
     garnish: "Lemon",
     recipe: [
@@ -295,7 +295,7 @@ export const drinks = [
     name: "Daiquiri",
     category: "Cocktail",
     price: 10.2,
-    image: "https://images.unsplash.com/photo-1563223771-375783ee91ad",
+    image: "https://www.afarmgirlsdabbles.com/wp-content/uploads/2023/06/daiquiri-afarmgirlsdabbles-01h.jpg",
     description: "Classic rum sour cocktail.",
     garnish: "Lime",
     recipe: [
@@ -311,7 +311,7 @@ export const drinks = [
     name: "Amaretto Sour",
     category: "Sour",
     price: 11.2,
-    image: "https://images.unsplash.com/photo-1497534446932-c925b458314e",
+    image: "https://assets.epicurious.com/photos/643ffefcefb46b50556ffb73/1:1/w_2560%2Cc_limit/Amaretto%2520Sour-RECIPE.jpg",
     description: "Sweet almond sour cocktail.",
     garnish: "Orange",
     recipe: [
@@ -327,7 +327,7 @@ export const drinks = [
     name: "Whiskey Sour",
     category: "Sour",
     price: 11.2,
-    image: "https://images.unsplash.com/photo-1544145945-f90425340c7e",
+    image: "https://cdnx.jumpseller.com/la-vinateria/image/64241274/whiskeysourADOBE__1_.jpg?1749091546",
     description: "Classic whiskey sour.",
     garnish: "Lemon",
     recipe: [
@@ -342,7 +342,7 @@ export const drinks = [
     name: "Charly Sour",
     category: "Sour",
     price: 12.9,
-    image: "https://images.unsplash.com/photo-1551024709-8f23befc6cf7",
+    image: "https://cdnx.jumpseller.com/la-vinateria/image/64241274/whiskeysourADOBE__1_.jpg?1749091546",
     description: "Pear brandy sour with apple juice.",
     garnish: "Apple",
     recipe: [
@@ -359,7 +359,7 @@ export const drinks = [
     name: "Classic Negroni",
     category: "Negroni",
     price: 11.2,
-    image: "https://assets.happyplates.com/media/2572/happy-plates-rezept-klassischer-negroni-ein-eleganter-cocktail-aus-italien-.png",
+    image: "https://www.liquor.com/thmb/lbwu9mR7WPYq36cWAEbiCvGM2tQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/neighborhood-negroni-1200x628-fb-d5b216eacafc4c56abb866bae231bd83.jpg",
     description: "Classic bitter Italian cocktail.",
     garnish: "Orange Peel",
     recipe: [
@@ -374,7 +374,7 @@ export const drinks = [
     name: "Contessa Negroni",
     category: "Negroni",
     price: 11.2,
-    image: "https://images.unsplash.com/photo-1551024709-8f23befc6cf7",
+    image: "https://www.liquor.com/thmb/lbwu9mR7WPYq36cWAEbiCvGM2tQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/neighborhood-negroni-1200x628-fb-d5b216eacafc4c56abb866bae231bd83.jpg",
     description: "Aperol variation of the Negroni.",
     garnish: "Orange",
     recipe: [
@@ -389,7 +389,7 @@ export const drinks = [
     name: "Boulevardier",
     category: "Negroni",
     price: 11.6,
-    image: "https://images.unsplash.com/photo-1544145945-f90425340c7e",
+    image: "https://www.liquor.com/thmb/lbwu9mR7WPYq36cWAEbiCvGM2tQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/neighborhood-negroni-1200x628-fb-d5b216eacafc4c56abb866bae231bd83.jpg",
     description: "Whiskey variation of the Negroni.",
     garnish: "Orange Peel",
     recipe: [
@@ -404,7 +404,7 @@ export const drinks = [
     name: "East India Negroni",
     category: "Negroni",
     price: 11.6,
-    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
+    image: "https://www.liquor.com/thmb/lbwu9mR7WPYq36cWAEbiCvGM2tQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/neighborhood-negroni-1200x628-fb-d5b216eacafc4c56abb866bae231bd83.jpg",
     description: "Exotic Negroni variation with rum and sherry.",
     garnish: "Orange",
     recipe: [
@@ -420,7 +420,7 @@ export const drinks = [
     name: "Mojito",
     category: "Longdrink",
     price: 12.2,
-    image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd",
+    image: "https://cuberspremium.com/wp-content/uploads/2017/07/receta-mojito.jpg",
     description: "Fresh Cuban mint cocktail.",
     garnish: "Mint & Lime",
     recipe: [
@@ -437,7 +437,7 @@ export const drinks = [
     name: "Tequila Sunrise",
     category: "Longdrink",
     price: 12.2,
-    image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187",
+    image: "https://www.lurch.de/media/e5/fa/f2/1693302658/tequila-sunrise-cocktail-rezept.jpg?ts=1753782549",
     description: "Sweet tequila cocktail with grenadine.",
     garnish: "Orange",
     recipe: [
@@ -453,7 +453,7 @@ export const drinks = [
     name: "Caipirinha",
     category: "Longdrink",
     price: 12.2,
-    image: "https://images.unsplash.com/photo-1563223771-375783ee91ad",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/01/Caipirinha_with_lime.jpg",
     description: "Brazilian cocktail with lime and sugar.",
     garnish: "Lime",
     recipe: [
@@ -468,7 +468,7 @@ export const drinks = [
     name: "Moscow Mule",
     category: "Longdrink",
     price: 12.2,
-    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
+    image: "https://static01.nyt.com/images/2023/11/14/multimedia/RS-Moscow-Mule-hbjv/RS-Moscow-Mule-hbjv-videoSixteenByNineJumbo1600.jpg",
     description: "Vodka mule with ginger beer.",
     garnish: "Lime",
     recipe: [
@@ -483,7 +483,7 @@ export const drinks = [
     name: "Dark N Stormy",
     category: "Longdrink",
     price: 12.2,
-    image: "https://images.unsplash.com/photo-1551024709-8f23befc6cf7",
+    image: "https://www.alkoholfreishop.lu/media/catalog/product/cache/4a5cf70630b9c3080e492221e54d9a9f/d/a/dark-and-stormy-800x600.png",
     description: "Dark rum and ginger beer cocktail.",
     garnish: "Lime",
     recipe: [
@@ -498,7 +498,7 @@ export const drinks = [
     name: "London Mule",
     category: "Longdrink",
     price: 12.2,
-    image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187",
+    image: "https://static01.nyt.com/images/2023/11/14/multimedia/RS-Moscow-Mule-hbjv/RS-Moscow-Mule-hbjv-videoSixteenByNineJumbo1600.jpg",
     description: "Gin-based mule cocktail.",
     garnish: "Lime",
     recipe: [
@@ -514,7 +514,7 @@ export const drinks = [
     name: "Virgin Mojito",
     category: "Alcohol Free",
     price: 8.7,
-    image: "https://images.unsplash.com/photo-1556881286-fc6915169721",
+    image: "https://cuberspremium.com/wp-content/uploads/2017/07/receta-mojito.jpg",
     description: "Alcohol-free mojito with mint and lime.",
     garnish: "Mint & Lime",
     recipe: [
@@ -531,7 +531,7 @@ export const drinks = [
     name: "Ipanema",
     category: "Alcohol Free",
     price: 8.7,
-    image: "https://images.unsplash.com/photo-1497534446932-c925b458314e",
+    image: "https://cdn.diffordsguide.com/cocktail/rygZ4R/default/0/512x.webp?v=1737701597",
     description: "Tropical alcohol-free cocktail.",
     garnish: "Lime",
     recipe: [
@@ -547,7 +547,7 @@ export const drinks = [
     name: "Bora Bora",
     category: "Alcohol Free",
     price: 8.7,
-    image: "https://images.unsplash.com/photo-1570628421055-4d30de868b8f",
+    image: "https://cdn.diffordsguide.com/cocktail/rygZ4R/default/0/512x.webp?v=1737701597",
     description: "Creamy tropical mocktail.",
     garnish: "Pineapple",
     recipe: [
@@ -564,7 +564,7 @@ export const drinks = [
     name: "Bob Marley",
     category: "Summer Cocktail",
     price: 12.9,
-    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
+    image: "https://cdn.diffordsguide.com/cocktail/rygZ4R/default/0/512x.webp?v=1737701597",
     description: "Fruity rum cocktail with blue curacao.",
     garnish: "Pineapple",
     recipe: [
@@ -580,7 +580,7 @@ export const drinks = [
     name: "Ocean Spritz",
     category: "Summer Cocktail",
     price: 9.4,
-    image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187",
+    image: "https://cdn.diffordsguide.com/cocktail/rygZ4R/default/0/512x.webp?v=1737701597",
     description: "Blue summer spritz with limoncello.",
     garnish: "Lemon",
     recipe: [
@@ -596,7 +596,7 @@ export const drinks = [
     name: "Sangria A la Hirschen",
     category: "Summer Cocktail",
     price: 12.6,
-    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
+    image: "https://cdn.diffordsguide.com/cocktail/rygZ4R/default/0/512x.webp?v=1737701597",
     description: "House sangria with fruit and rum.",
     garnish: "Orange Slice",
     recipe: [
