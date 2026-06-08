@@ -32,6 +32,8 @@ export default function DrinkDetails({
           relative
           shadow-2xl
           animate-in
+          max-h-[90vh]
+          overflow-y-auto
         "
       >
 
@@ -52,7 +54,7 @@ export default function DrinkDetails({
         </button>
 
         <img
-          src={drink.image}
+          src={drink.image || "/images/placeholder.jpg"}
           alt={drink.name}
           className="
             w-full
@@ -88,64 +90,235 @@ export default function DrinkDetails({
 
           </div>
 
-          <p className="text-zinc-300 text-lg">
-            {drink.description}
-          </p>
+          {(drink.origin ||
+            drink.region ||
+            drink.producer ||
+            drink.age ||
+            drink.year) && (
 
-          <div>
+            <div className="flex flex-wrap gap-2">
 
-            <h3
-              className="
-                text-xl
-                font-bold
-                mb-3
-                text-amber-400
-              "
-            >
-              Recipe
-            </h3>
+              {drink.origin && (
+                <span className="bg-black/40 px-3 py-1 rounded-full text-sm">
+                  {drink.origin}
+                </span>
+              )}
 
-            <ul className="space-y-2">
+              {drink.region && (
+                <span className="bg-black/40 px-3 py-1 rounded-full text-sm">
+                  {drink.region}
+                </span>
+              )}
 
-              {drink.recipe.map((item, index) => (
+              {drink.producer && (
+                <span className="bg-black/40 px-3 py-1 rounded-full text-sm">
+                  {drink.producer}
+                </span>
+              )}
 
-                <li
-                  key={index}
-                  className="
-                    bg-black/40
-                    rounded-lg
-                    px-4
-                    py-3
-                    text-zinc-200
-                  "
-                >
-                  {item}
-                </li>
+              {drink.age && (
+                <span className="bg-black/40 px-3 py-1 rounded-full text-sm">
+                  {drink.age} Years
+                </span>
+              )}
 
-              ))}
+              {drink.year && (
+                <span className="bg-black/40 px-3 py-1 rounded-full text-sm">
+                  {drink.year}
+                </span>
+              )}
 
-            </ul>
+            </div>
 
-          </div>
+          )}
 
-          <div>
+          {drink.description && (
 
-            <h3
-              className="
-                text-xl
-                font-bold
-                mb-2
-                text-amber-400
-              "
-            >
-              Garnish
-            </h3>
-
-            <p className="text-zinc-300">
-              {drink.garnish}
+            <p className="text-zinc-300 text-lg">
+              {drink.description}
             </p>
 
-          </div>
+          )}
+
+          {drink.price && (
+
+            <div>
+              <h3
+                className="
+                  text-xl
+                  font-bold
+                  mb-2
+                  text-amber-400
+                "
+              >
+                Price
+              </h3>
+
+              <p className="text-2xl font-bold">
+                € {drink.price.toFixed(2)}
+              </p>
+            </div>
+
+          )}
+
+          {drink.prices && (
+
+            <div>
+
+              <h3
+                className="
+                  text-xl
+                  font-bold
+                  mb-3
+                  text-amber-400
+                "
+              >
+                Sizes
+              </h3>
+
+              <ul className="space-y-2">
+
+                {drink.prices.map((item, index) => (
+
+                  <li
+                    key={index}
+                    className="
+                      bg-black/40
+                      rounded-lg
+                      px-4
+                      py-3
+                      flex
+                      justify-between
+                    "
+                  >
+
+                    <span>{item.volume}</span>
+
+                    <span className="text-amber-400">
+                      € {item.price.toFixed(2)}
+                    </span>
+
+                  </li>
+
+                ))}
+
+              </ul>
+
+            </div>
+
+          )}
+
+          {drink.recipe && (
+
+            <div>
+
+              <h3
+                className="
+                  text-xl
+                  font-bold
+                  mb-3
+                  text-amber-400
+                "
+              >
+                Recipe
+              </h3>
+
+              <ul className="space-y-2">
+
+                {drink.recipe.map((item, index) => (
+
+                  <li
+                    key={index}
+                    className="
+                      bg-black/40
+                      rounded-lg
+                      px-4
+                      py-3
+                      flex
+                      justify-between
+                      text-zinc-200
+                    "
+                  >
+
+                    <span>{item.ingredient}</span>
+
+                    <span className="text-amber-400">
+                      {item.amount}
+                    </span>
+
+                  </li>
+
+                ))}
+
+              </ul>
+
+            </div>
+
+          )}
+
+          {drink.garnish && (
+
+            <div>
+
+              <h3
+                className="
+                  text-xl
+                  font-bold
+                  mb-2
+                  text-amber-400
+                "
+              >
+                Garnish
+              </h3>
+
+              <p className="text-zinc-300">
+                {drink.garnish}
+              </p>
+
+            </div>
+
+          )}
+
+          {drink.tags?.length > 0 && (
+
+            <div>
+
+              <h3
+                className="
+                  text-xl
+                  font-bold
+                  mb-3
+                  text-amber-400
+                "
+              >
+                Tags
+              </h3>
+
+              <div className="flex flex-wrap gap-2">
+
+                {drink.tags.map((tag) => (
+
+                  <span
+                    key={tag}
+                    className="
+                      bg-amber-500/20
+                      text-amber-400
+                      px-3
+                      py-1
+                      rounded-full
+                      text-sm
+                    "
+                  >
+                    {tag}
+                  </span>
+
+                ))}
+
+              </div>
+
+            </div>
+
+          )}
 
         </div>
 

@@ -3,6 +3,10 @@ export default function DrinkCard({
   setSelectedDrink
 }) {
 
+  const displayPrice =
+    drink.price ??
+    drink.prices?.[0]?.price
+
   return (
 
     <li
@@ -22,8 +26,30 @@ export default function DrinkCard({
       "
     >
 
+      {drink.featured && (
+
+        <span
+          className="
+            absolute
+            top-3
+            right-3
+            z-10
+            bg-amber-500
+            text-black
+            px-3
+            py-1
+            rounded-full
+            text-xs
+            font-bold
+          "
+        >
+          ★ Featured
+        </span>
+
+      )}
+
       <img
-        src={drink.image}
+        src={drink.image || "/images/placeholder.jpg"}
         alt={drink.name}
         className="
           w-full
@@ -62,13 +88,15 @@ export default function DrinkCard({
           {drink.category}
         </span>
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-4">
 
           <h2
             className="
-              text-3xl
+              text-2xl
+              md:text-3xl
               font-black
               text-white
+              leading-tight
             "
           >
             {drink.name}
@@ -79,10 +107,42 @@ export default function DrinkCard({
               text-white
               text-2xl
               font-light
+              shrink-0
             "
           >
             +
           </span>
+
+        </div>
+
+        <div className="mt-3 flex items-center justify-between">
+
+          {displayPrice && (
+
+            <span
+              className="
+                text-amber-400
+                font-bold
+                text-lg
+              "
+            >
+              € {displayPrice.toFixed(2)}
+            </span>
+
+          )}
+
+          {drink.volume && (
+
+            <span
+              className="
+                text-zinc-400
+                text-sm
+              "
+            >
+              {drink.volume}
+            </span>
+
+          )}
 
         </div>
 

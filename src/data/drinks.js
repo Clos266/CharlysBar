@@ -1,709 +1,2632 @@
 
 
-
-export const drinks = [
-
-  // SPRITZ
+export const softDrinks = [
   {
     id: 1,
-    name: "Violet Spritz",
-    category: "Spritz",
-    price: 9.4,
-    image: "https://a.storyblok.com/f/287256641685145/1428x1655/55d95faf0e/violet-alkoholfrei-mit-falstaff.webp/m/1200x0",
-    description: "Floral spritz with secco and orange.",
-    garnish: "Orange",
-    recipe: [
-      "Violet Apero",
-      "Secco",
-      "Soda",
-      "Orange"
-    ],
+    name: "Randegger Gourmet Wasser",
+    category: "Water",
+    volume: "0.75l",
+    price: 7.5,
+    description: "Medium oder Still",
+    image: "https://www.randegger.de/images/gourmetdetail.png?crc=1173285612",
   },
 
   {
     id: 2,
-    name: "Aperol Spritz",
-    category: "Spritz",
-    price: 9.4,
-    image: "https://www.aperol.com/app/uploads/sites/14/2026/03/Aperitivo.webp",
-    description: "Classic Italian aperitif spritz.",
-    garnish: "Orange",
-    recipe: [
-      "Aperol",
-      "Secco",
-      "Soda",
-      "Orange"
-    ],
+    name: "Randegger Gourmet Wasser",
+    category: "Water",
+    volume: "0.25l",
+    price: 4.6,
+    description: "Medium oder Still",
+    image: "https://www.randegger.de/images/gourmetdetail.png?crc=1173285612",
   },
 
   {
     id: 3,
-    name: "Bodensee Spritz",
-    category: "Spritz",
-    price: 9.4,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhlCLs89kCEzkWr0vS2svnALKhDlagSIHTg&s",
-    description: "Refreshing sparkling wine spritz.",
-    garnish: "Orange",
-    recipe: [
-      "Sparkling Wine",
-      "Secco",
-      "Orange"
-    ],
+    name: "Leitungswasser Karaffe",
+    category: "Water",
+    volume: "0.5l",
+    price: 2.4,
+    description: "Servicegebühr",
+      image: "https://shop.wvgw.de/media/96/74/7c/1776073613/307785-wvgw-glaskaraffe_trinkwasser_800x800.jpg?ts=1776073613",
   },
 
   {
     id: 4,
-    name: "Limoncello Spritz",
-    category: "Spritz",
-    price: 9.4,
-    image: "https://www.savoringitaly.com/wp-content/uploads/2026/01/limoncello-spritz.jpg",
-    description: "Fresh citrus spritz with limoncello.",
-    garnish: "Lemon",
-    recipe: [
-      "Sparkling Wine",
-      "Secco",
-      "Limoncello"
-    ],
+    name: "Schweppes Bitter Lemon",
+    category: "Soft Drink",
+    volume: "0.2l",
+    price: 4.9,
+    image : "https://previews.123rf.com/images/borusikk/borusikk1202/borusikk120200085/12504601-glass-of-water-ice-and-slice-of-fresh-lemon-on-a-white-background.jpg",
   },
 
   {
     id: 5,
-    name: "Campari Spritz",
-    category: "Spritz",
-    price: 9.4,
-    image: "https://c.rewe-static.de/35958854/2/35958854.png?impolicy=rds&im=Resize,width=1480",
-    description: "Bittersweet Campari spritz.",
-    garnish: "Orange",
-    recipe: [
-      "Sparkling Wine",
-      "Secco",
-      "Campari"
-    ],
+    name: "Schweppes Ginger Ale",
+    category: "Soft Drink",
+    volume: "0.2l",
+    price: 4.9,
+    image: "https://previews.123rf.com/images/borusikk/borusikk1202/borusikk120200085/12504601-glass-of-water-ice-and-slice-of-fresh-lemon-on-a-white-background.jpg"
   },
 
-  // ERFRISCHENDES
   {
     id: 6,
-    name: "Hugo",
-    category: "Refreshing",
-    price: 9.4,
-    image: "https://justdrinks.se/wp-content/uploads/2025/06/hugo-spritz-flader-mynta-lime-syrlig-drink.webp",
-    description: "Light elderflower spritz with mint.",
-    garnish: "Mint",
-    recipe: [
-      "Elderflower Syrup",
-      "Sparkling Wine",
-      "Mint",
-      "Soda"
-    ],
+    name: "Thomas Henry Tonic Water",
+    category: "Tonic",
+    volume: "0.2l",
+    price: 5.1,
+    image: "https://the-spiritists.com/wp-content/uploads/2021/09/TH_Tonic_Water_200ml-Online-Shop.png"
   },
 
   {
     id: 7,
-    name: "Lillet Wild Berry",
-    category: "Refreshing",
-    price: 9.4,
-    image: "https://menu.hansimglueck-burgergrill.de/api/image?uuid=c4aab56c-bf85-4a37-4cf7-3947fd672700&preset=og",
-    description: "Fruity Lillet aperitif with berries.",
-    garnish: "Berries",
-    recipe: [
-      "Lillet Blanc",
-      "Wild Berry"
-    ],
+    name: "Coca-Cola",
+    category: "Soft Drink",
+    volume: "0.33l",
+    price: 5.1,
+    image: "https://images.stockcake.com/public/b/a/5/ba51f1c9-d63f-47b9-a3fd-25b49672129c_large/coca-cola-pouring-moment-stockcake.jpg"
   },
 
   {
     id: 8,
-    name: "Rosato Mio",
-    category: "Refreshing",
-    price: 9.4,
-    image: "https://i.falstaff.com/storage/2023/01/Rosato-Mio-c-Pernod-Ricard-1320.jpg?width=1200&aspect_ratio=40:21&crop_gravity=north&format=jpg",
-    description: "Rosato aperitif with sparkling wine and mint.",
-    garnish: "Mint & Orange",
-    recipe: [
-      "Riesling Sparkling Wine",
-      "Rosato",
-      "Orange",
-      "Lime",
-      "Mint"
-    ],
+    name: "Coca-Cola Zero",
+    category: "Soft Drink",
+    volume: "0.33l",
+    price: 5.1,
+       image: "https://images.stockcake.com/public/b/a/5/ba51f1c9-d63f-47b9-a3fd-25b49672129c_large/coca-cola-pouring-moment-stockcake.jpg"
+
   },
 
-  // COCKTAILS
   {
     id: 9,
-    name: "Pina Colada",
-    category: "Cocktail",
-    price: 12.1,
-    image: "https://barschool.b-cdn.net/wp-content/uploads/2022/05/25-Pina-Colada.jpg",
-    description: "Creamy tropical cocktail with pineapple and coconut.",
-    garnish: "Pineapple",
-    recipe: [
-      "Rum",
-      "Coconut",
-      "Pineapple Juice",
-      "Cream"
-    ],
+    name: "Mezzo Mix",
+    category: "Soft Drink",
+    volume: "0.33l",
+    price: 5.1,
+       image: "https://images.stockcake.com/public/b/a/5/ba51f1c9-d63f-47b9-a3fd-25b49672129c_large/coca-cola-pouring-moment-stockcake.jpg"
+
   },
 
   {
     id: 10,
-    name: "Long Island Ice Tea",
-    category: "Cocktail",
-    price: 13.3,
-    image: "https://dinnerthendessert.com/wp-content/uploads/2023/06/Long-Island-Iced-Tea-7.jpg",
-    description: "Strong cocktail with multiple spirits.",
-    garnish: "Lime",
-    recipe: [
-      "Vodka",
-      "Rum",
-      "Gin",
-      "Tequila",
-      "Orange Liqueur",
-      "Lime Juice",
-      "Cola"
-    ],
+    name: "Fanta",
+    category: "Soft Drink",
+    volume: "0.33l",
+    price: 5.1,
+     image: "https://previews.123rf.com/images/borusikk/borusikk1202/borusikk120200085/12504601-glass-of-water-ice-and-slice-of-fresh-lemon-on-a-white-background.jpg"
   },
 
   {
     id: 11,
-    name: "White Russian",
-    category: "Cocktail",
-    price: 9.8,
-    image: "https://img.taste.com.au/vCBqmo3Z/taste/2024/04/white-russian-recipe-198100-2.jpeg",
-    description: "Smooth vodka cocktail with coffee liqueur.",
-    garnish: "Cream",
-    recipe: [
-      "Vodka",
-      "Coffee Liqueur",
-      "Cream"
-    ],
+    name: "Sprite",
+    category: "Soft Drink",
+    volume: "0.33l",
+    price: 5.1,
+     image: "https://previews.123rf.com/images/borusikk/borusikk1202/borusikk120200085/12504601-glass-of-water-ice-and-slice-of-fresh-lemon-on-a-white-background.jpg"
   },
 
   {
     id: 12,
-    name: "Cosmopolitan",
-    category: "Cocktail",
-    price: 11.3,
-    image: "https://punchdrink.com/wp-content/uploads/2020/03/Article-Ultimate-Cosmo-Cosmopolitan-Cocktail-Recipe.jpg?w=1024",
-    description: "Elegant cranberry vodka cocktail.",
-    garnish: "Lime",
-    recipe: [
-      "Vodka",
-      "Orange Liqueur",
-      "Lime Juice",
-      "Cranberry Juice"
+    name: "Saftschorle",
+    category: "Juice Spritzer",
+    volume: "0.5l",
+    price: 6.4,
+    flavors: [
+      "Apfel",
+      "Johannisbeere",
+      "Maracuja",
+      "Kirsche",
+      "Ananas",
+      "Grapefruit",
+      "Orange",
+      "Cranberry",
     ],
+     image: "https://previews.123rf.com/images/borusikk/borusikk1202/borusikk120200085/12504601-glass-of-water-ice-and-slice-of-fresh-lemon-on-a-white-background.jpg"
   },
 
   {
     id: 13,
+    name: "Fruchtsaft",
+    category: "Juice",
+    volume: "0.25l",
+    price: 5.7,
+    flavors: [
+      "Apfel",
+      "Johannisbeere",
+      "Maracuja",
+      "Kirsche",
+      "Ananas",
+      "Grapefruit",
+      "Orange",
+      "Cranberry",
+    ],
+     image: "https://previews.123rf.com/images/borusikk/borusikk1202/borusikk120200085/12504601-glass-of-water-ice-and-slice-of-fresh-lemon-on-a-white-background.jpg"
+  },
+]
+// APERITIFS
+export const aperitifs = [  
+{ id: 1001, name: "Martini Bianco oder Rosso", category: "APERITIFS", price: 7.10, image: "", description: "", garnish: "", recipe: [], image: "https://assets.bacardicontenthub.com/transform/2f915987-38e7-437c-a2da-9f391f51b924/FY26_MARTINI_Global_Website_Bianco_Rocks_SST?io=transform:fit,width:800,height:1000&format=png&quality=75"},
+
+{ id: 1002, name: "Sherry Sandeman dry oder medium", category: "APERITIFS", price: 6.40, image: "", description: "", garnish: "", recipe: [], image: "https://image.stern.de/32519964/t/NN/v2/w1440/r1.7778/-/sherry-bild.jpg" },
+
+{ id: 1003 , name: "Campari Soda oder Orange", category: "APERITIFS", price: 7.70, image: "", description: "", garnish: "", recipe: [], image: "https://www.leckerschmecker.me/wp-content/uploads/sites/6/2025/06/campari-soda-ls.jpg?w=480" },
+
+{ id: 1004, name: "Campari on the rocks", category: "APERITIFS", price: 6.90, image: "", description: "", garnish: "", recipe: [], image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_9E5oyDkSFdWPaKBHYtZ076sK27uZSFp9-A&s" },
+
+{ id: 1005, name: "Sanbitter on the rocks (alkoholfrei)", category: "APERITIFS", price: 4.90, image: "", description: "", garnish: "", recipe: [], image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_9E5oyDkSFdWPaKBHYtZ076sK27uZSFp9-A&s" },
+
+{ id: 1006, name: "Sanbitter mit Soda oder Orange", category: "APERITIFS", price: 5.60, image: "", description: "", garnish: "", recipe: [], image: "https://www.leckerschmecker.me/wp-content/uploads/sites/6/2025/06/campari-soda-ls.jpg?w=480" },
+
+{ id: 1007, name: "Pernod", category: "APERITIFS", price: 6.50, image: "", description: "", garnish: "", recipe: [], image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtOeON-I-fVxghcZ4_FJRZSJB0UiilbK1CsA&s" },
+]
+// SPRITZ
+
+export const spritz = [
+  {
+    id: 2000,
+    name: "Violet Spritz",
+    category: "Spritz",
+    price: 9.4,
+
+    garnish: "Orange",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 10,
+
+    tags: ["floral", "refreshing", "aperitif"],
+
+    recipe: [
+      { ingredient: "Violet Apero", amount: "6cl" },
+      { ingredient: "Secco", amount: "8cl" },
+      { ingredient: "Soda", amount: "2cl" },
+      { ingredient: "Orange", amount: "Garnish" },
+    ],
+    image: "https://a.storyblok.com/f/287256641685145/1428x1655/55d95faf0e/violet-alkoholfrei-mit-falstaff.webp/m/1200x0",
+  },
+
+  {
+    id: 2001,
+    name: "Aperol Spritz",
+    category: "Spritz",
+    price: 9.4,
+
+    garnish: "Orange",
+
+    featured: true,
+    difficulty: "easy",
+    abv: 11,
+
+    tags: ["bitter", "refreshing", "aperitif"],
+
+    recipe: [
+      { ingredient: "Aperol", amount: "6cl" },
+      { ingredient: "Secco", amount: "8cl" },
+      { ingredient: "Soda", amount: "2cl" },
+      { ingredient: "Orange", amount: "Garnish" },
+    ],
+    image: "https://www.aperol.com/app/uploads/2023/05/perfekte-spritz.jpg",
+  },
+
+  {
+    id: 2002,
+    name: "Bodensee Spritz",
+    category: "Spritz",
+    price: 9.4,
+
+    garnish: "Orange",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 11,
+
+    tags: ["sparkling", "refreshing", "light"],
+
+    recipe: [
+      { ingredient: "Sekt", amount: "10cl" },
+      { ingredient: "Secco", amount: "5cl" },
+      { ingredient: "Orange", amount: "Garnish" },
+    ],
+    image: "https://www.senft-destillerie.de/media/e9/6a/2f/1733760923/SENFT-Bodensee-Spritz-0467.jpg?ts=1733760962",  
+  },
+
+  {
+    id: 2003,
+    name: "Limoncello Spritz",
+    category: "Spritz",
+    price: 9.4,
+
+    garnish: "Lemon",
+
+    featured: true,
+    difficulty: "easy",
+    abv: 11,
+
+    tags: ["citrus", "refreshing", "sweet"],
+
+    recipe: [
+      { ingredient: "Limoncello", amount: "6cl" },
+      { ingredient: "Sekt", amount: "8cl" },
+      { ingredient: "Secco", amount: "4cl" },
+    ],
+    image: "https://www.savoringitaly.com/wp-content/uploads/2026/01/limoncello-spritz.jpg",
+  },
+
+  {
+    id: 2004,
+    name: "Campari Spritz",
+    category: "Spritz",
+    price: 9.4,
+
+    garnish: "Orange",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 12,
+
+    tags: ["bitter", "strong", "aperitif"],
+
+    recipe: [
+      { ingredient: "Campari", amount: "6cl" },
+      { ingredient: "Sekt", amount: "8cl" },
+      { ingredient: "Secco", amount: "4cl" },
+    ],
+    image:"https://c.rewe-static.de/35958854/2/35958854.png?impolicy=rds&im=Resize,width=1480",
+  },
+]
+
+export const ginTonics = [
+  {
+    id: 3000 ,
+    name: "Bombay Gin Tonic",
+    category: "Gin Tonic",
+    volume: "4cl",
+    price: 9.8,
+
+    garnish: "",
+    featured: false,
+
+    tags: ["classic", "juniper", "refreshing"],
+
+    recipe: [
+      { ingredient: "Bombay Gin", amount: "4cl" },
+      { ingredient: "Thomas Henry Tonic Water", amount: "Fill" },
+    ],
+    image:"https://i.otto.de/i/otto/3833a047-0ad9-494c-8213-4e0b67c54934/bombay-sapphire-longdrinkglas-bombay-sapphire-gin-longdrinkglaeser-6er-set-l-blaue-glaeser-mit-relief-6-tlg.jpg?$formatz$",
+  },
+
+
+  {
+    id: 3001,
+    name: "Bodensee 21 Dry Gin Tonic",
+    category: "Gin Tonic",
+    volume: "4cl",
+    price: 11.7,
+
+    tags: ["dry", "regional", "juniper"],
+
+    recipe: [
+      { ingredient: "Bodensee 21 Dry Gin", amount: "4cl" },
+      { ingredient: "Thomas Henry Tonic Water", amount: "Fill" },
+    ],
+    image: "https://static.wixstatic.com/media/4e7455_49059abd21ac4e3987aee45fba298149~mv2.jpg/v1/fill/w_480,h_720,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/4e7455_49059abd21ac4e3987aee45fba298149~mv2.jpg", 
+  },
+
+
+  {
+    id: 3003,
+    name: "Hendrick's Gin Tonic",
+    category: "Gin Tonic",
+    volume: "4cl",
+    price: 11.2,
+
+    tags: ["cucumber", "floral", "premium"],
+
+    recipe: [
+      { ingredient: "Hendrick's Gin", amount: "4cl" },
+      { ingredient: "Thomas Henry Tonic Water", amount: "Fill" },
+    ],
+    image:"https://spirituosenworld.de/images/cocktails/gin-tonic-cocktail.jpg.pagespeed.ce.0S632WpVCy.jpg,"
+  },
+
+  {
+    id: 3004,
+    name: "Tanqueray No. 10 Gin Tonic",
+    category: "Gin Tonic",
+    volume: "4cl",
+    price: 11.2,
+
+    tags: ["citrus", "premium", "classic"],
+
+    recipe: [
+      { ingredient: "Tanqueray No. 10", amount: "4cl" },
+      { ingredient: "Thomas Henry Tonic Water", amount: "Fill" },
+    ],
+    image: "https://prikeshop.lt/app/uploads/2023/02/TANQUERAY-NO.TEN-GIN-TONIC_mood.jpg",
+  },
+
+  {
+    id: 3005,
+    name: "Monkey 47 Gin Tonic",
+    category: "Gin Tonic",
+    volume: "4cl",
+    price: 12.2,
+
+    featured: true,
+
+    tags: ["premium", "black-forest", "complex"],
+
+    recipe: [
+      { ingredient: "Monkey 47 Gin", amount: "4cl" },
+      { ingredient: "Thomas Henry Tonic Water", amount: "Fill" },
+    ],
+    image: "https://m.media-amazon.com/images/I/715rLR5F6bL.jpg",
+  },
+
+  {
+    id: 3006,
+    name: "Blackwater Gin Tonic",
+    category: "Gin Tonic",
+    volume: "4cl",
+    price: 12.2,
+
+    tags: ["premium", "botanical"],
+
+    recipe: [
+      { ingredient: "Blackwater Gin", amount: "4cl" },
+      { ingredient: "Thomas Henry Tonic Water", amount: "Fill" },
+    ],
+    image: "https://www.wein-riegger.de/media/e7/37/68/1713439692/Blackwater_No.5_Irish_Gin-05790.webp?ts=1713439692",
+  },
+
+  {
+    id: 3007,
+    name: "Chinola Gin Tonic",
+    category: "Gin Tonic",
+    volume: "4cl",
+    price: 13.1,
+
+    tags: ["tropical", "premium", "fruity"],
+
+    recipe: [
+      { ingredient: "Chinola Gin", amount: "4cl" },
+      { ingredient: "Thomas Henry Tonic Water", amount: "Fill" },
+    ],
+    image: "https://storage.fenixdrinks.cz/images/medium/1fedb6e62424c29dad3c1e10de86fc48.jpeg",
+  },
+
+  {
+    id: 3008,
+    name: "Undone No.2 Gin Tonic",
+    category: "Alcohol Free Gin Tonic",
+    volume: "4cl",
+    price: 11.1,
+
+    tags: ["alcohol-free", "juniper", "refreshing"],
+
+    recipe: [
+      { ingredient: "Undone No.2 London Dry Juniper", amount: "4cl" },
+      { ingredient: "Thomas Henry Tonic Water", amount: "Fill" },
+    ],
+       image: "https://www.weinquelle.com/fotos_gross/s23346.jpg",
+
+  },
+]
+
+export const refreshing = [
+  {
+    id: 4000,
+    name: "Hugo",
+    category: "Refreshing",
+    price: 9.4,
+
+    garnish: "Mint",
+
+    featured: true,
+    difficulty: "easy",
+    abv: 8,
+
+    tags: ["refreshing", "floral", "summer"],
+
+    recipe: [
+      { ingredient: "Elderflower Syrup", amount: "2cl" },
+      { ingredient: "Sparkling Wine", amount: "10cl" },
+      { ingredient: "Mint", amount: "Garnish" },
+      { ingredient: "Soda", amount: "Top" },
+    ],
+    image:"https://justdrinks.se/wp-content/uploads/2025/06/hugo-spritz-flader-mynta-lime-syrlig-drink.webp",
+  },
+
+  {
+    id: 4001,
+    name: "Lillet Wild Berry",
+    category: "Refreshing",
+    price: 9.4,
+
+    garnish: "Berries",
+
+    featured: true,
+    difficulty: "easy",
+    abv: 8,
+
+    tags: ["fruity", "refreshing", "aperitif"],
+
+    recipe: [
+      { ingredient: "Lillet Blanc", amount: "5cl" },
+      { ingredient: "Schweppes Wild Berry", amount: "Top" },
+    ],
+    image: "https://c.rewe-static.de/33127162/12/33127162.png?impolicy=rds&im=Resize,width=1480",
+  },
+
+  {
+    id: 4002,
+    name: "Violet Wild Berry",
+    category: "Refreshing",
+    price: 9.4,
+
+    garnish: "Berries",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 8,
+
+    tags: ["floral", "fruity", "refreshing"],
+
+    recipe: [
+      { ingredient: "Violet Aperitivo", amount: "5cl" },
+      { ingredient: "Schweppes Wild Berry", amount: "Top" },
+    ],
+    image: "https://a.storyblok.com/f/287256641685145/561x660/984b59a975/violet-wild-berrx.webp",
+  },
+
+  {
+    id: 4003,
+    name: "Rosato Duo",
+    category: "Refreshing",
+    price: 9.4,
+
+    garnish: "Orange, Lime & Mint",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 8,
+
+    tags: ["citrus", "refreshing", "light"],
+
+    recipe: [
+      { ingredient: "Rosato", amount: "5cl" },
+      { ingredient: "Tonic Water", amount: "Top" },
+      { ingredient: "Orange", amount: "Garnish" },
+      { ingredient: "Lime", amount: "Garnish" },
+      { ingredient: "Mint", amount: "Garnish" },
+    ],
+    image: "https://www.myspirits.eu/media/wysiwyg/blog/5a047cace6b5ecc28397f59aa26e45ae.jpg",
+  },
+
+
+  {
+    id: 4005,
+    name: "Rosato Mio",
+    category: "Refreshing",
+    price: 9.4,
+
+    garnish: "Orange, Lime & Mint",
+
+    featured: true,
+    difficulty: "easy",
+    abv: 9,
+
+    tags: ["citrus", "sparkling", "refreshing"],
+
+    recipe: [
+      { ingredient: "Riesling Sparkling Wine", amount: "10cl" },
+      { ingredient: "Rosato", amount: "5cl" },
+      { ingredient: "Orange", amount: "Garnish" },
+      { ingredient: "Lime", amount: "Garnish" },
+      { ingredient: "Mint", amount: "Garnish" },
+    ],
+image: "https://www.myspirits.eu/media/wysiwyg/blog/5a047cace6b5ecc28397f59aa26e45ae.jpg",
+  },
+
+  {
+    id: 4006,
+    name: "Sommerschorle",
+    category: "Refreshing",
+    price: 7.2,
+
+    garnish: "Mint",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 7,
+
+    tags: ["wine", "refreshing", "summer"],
+
+    recipe: [
+      { ingredient: "White Wine", amount: "10cl" },
+      { ingredient: "Soda", amount: "Top" },
+      { ingredient: "Martini Bianco", amount: "2cl" },
+      { ingredient: "Mint", amount: "Garnish" },
+    ],
+    image: "https://www.rheinpfalz.de/cms_media/module_img/3352/1676093_1_articledetail_91-99556250.webp",
+  },
+]
+export const cocktails = [
+  {
+    id: 5000,
+    name: "Pina Colada",
+    category: "Cocktail",
+    price: 12.1,
+
+    garnish: "Pineapple",
+
+    featured: true,
+    difficulty: "medium",
+    abv: 15,
+
+    tags: ["tropical", "sweet", "creamy"],
+
+    recipe: [
+      { ingredient: "Rum", amount: "4cl" },
+      { ingredient: "Coconut", amount: "3cl" },
+      { ingredient: "Pineapple Juice", amount: "8cl" },
+      { ingredient: "Cream", amount: "2cl" },
+    ],
+    image: "https://www.kuechengoetter.de/uploads/media/1800x1200/05/17625-pina-colada-classic.jpg?v=1-0",  
+  },
+
+  {
+    id: 5001,
+    name: "Long Island Ice Tea",
+    category: "Cocktail",
+    price: 13.3,
+
+    garnish: "Lime",
+
+    featured: true,
+    difficulty: "hard",
+    abv: 22,
+
+    tags: ["strong", "classic", "party"],
+
+    recipe: [
+      { ingredient: "Vodka", amount: "2cl" },
+      { ingredient: "Rum", amount: "2cl" },
+      { ingredient: "Gin", amount: "2cl" },
+      { ingredient: "Tequila", amount: "2cl" },
+      { ingredient: "Orange Liqueur", amount: "2cl" },
+      { ingredient: "Lime Juice", amount: "2cl" },
+      { ingredient: "Cola", amount: "Top" },
+    ],
+    image: "https://www.long-island-iced-tea.com/images/long-island-iced-tea-cocktail2.jpg",
+  },
+
+  {
+    id: 5002,
+    name: "White Russian",
+    category: "Cocktail",
+    price: 9.8,
+
+    garnish: "Cream",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 18,
+
+    tags: ["creamy", "coffee", "sweet"],
+
+    recipe: [
+      { ingredient: "Vodka", amount: "5cl" },
+      { ingredient: "Coffee Liqueur", amount: "2cl" },
+      { ingredient: "Cream", amount: "Top" },
+    ],
+    image: "https://www.liquor.com/thmb/wzgqg2FC1Sqbwo_PAJofVVZIMRk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__liquor__2017__12__20073201__white-russian-720x720-article-cbe4b9a832c64f8da0bb09407caefa7f.jpg",
+  },
+
+  {
+    id: 5003,
+    name: "Cosmopolitan",
+    category: "Cocktail",
+    price: 11.3,
+
+    garnish: "Lime",
+
+    featured: true,
+    difficulty: "medium",
+    abv: 18,
+
+    tags: ["fruity", "citrus", "classic"],
+
+    recipe: [
+      { ingredient: "Vodka", amount: "4cl" },
+      { ingredient: "Orange Liqueur", amount: "2cl" },
+      { ingredient: "Lime Juice", amount: "2cl" },
+      { ingredient: "Cranberry Juice", amount: "3cl" },
+    ],
+    image: "https://assets.bonappetit.com/photos/650df690c94ec4218673b45a/6:9/w_1300,h_1950,c_limit/20230915-WEB-SEO-0882_update%20copy.jpg",
+  },
+
+  {
+    id: 5004,
     name: "Espresso Martini",
     category: "Cocktail",
     price: 12.4,
-    image: "https://www.foodandwine.com/thmb/DJb_2i45O5SinNYQPIC8uOiNn0g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Espresso-Martini-FT-Recipe0126-bc66dfee7afa4bd8bda8f4f0900868bb.jpg",
-    description: "Coffee-forward martini with espresso.",
+
     garnish: "Coffee Beans",
+
+    featured: true,
+    difficulty: "medium",
+    abv: 20,
+
+    tags: ["coffee", "after-dinner", "popular"],
+
     recipe: [
-      "Vodka",
-      "Coffee Liqueur",
-      "Espresso"
+      { ingredient: "Vodka", amount: "4cl" },
+      { ingredient: "Coffee Liqueur", amount: "2cl" },
+      { ingredient: "Espresso", amount: "3cl" },
     ],
+    image: "https://static-prod.remymartin.com/app/uploads/2025/02/remy-martin-cocktails-remy-espresso-1x1-250220-02.jpg",
   },
 
   {
-    id: 14,
+    id: 5005,
     name: "Pornstar Martini",
     category: "Cocktail",
     price: 15.9,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvuEch6O8GlTi1HAqImF70j399r21AEFTCFg&s",
-    description: "Passion fruit vanilla cocktail with champagne.",
+
     garnish: "Passion Fruit",
+
+    featured: true,
+    difficulty: "medium",
+    abv: 18,
+
+    tags: ["fruity", "sweet", "premium"],
+
     recipe: [
-      "Vanilla Vodka",
-      "Passion Fruit",
-      "Vanilla",
-      "Champagne"
+      { ingredient: "Vanilla Vodka", amount: "4cl" },
+      { ingredient: "Passion Fruit", amount: "4cl" },
+      { ingredient: "Vanilla", amount: "1cl" },
+      { ingredient: "Champagne", amount: "Shot" },
     ],
+    image: "https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/37cc6b0af660f4854ddbac2ea2d16964/Derivates/c5cf9fd364ebc5e9f060daba7634f8c15402b1bc.jpg",
   },
 
   {
-    id: 15,
+    id: 5006,
     name: "Mai Tai",
     category: "Cocktail",
     price: 11.3,
-    image: "https://modernquests.com/cdn/shop/files/MaiTaiCocktailGlasses490ml_Setof4-5.jpg?v=1768385314&width=800",
-    description: "Classic tiki cocktail with almond syrup.",
+
     garnish: "Mint",
+
+    featured: false,
+    difficulty: "medium",
+    abv: 20,
+
+    tags: ["tiki", "rum", "tropical"],
+
     recipe: [
-      "Rum",
-      "Orange Liqueur",
-      "Lime Juice",
-      "Almond Syrup"
+      { ingredient: "Rum", amount: "5cl" },
+      { ingredient: "Orange Liqueur", amount: "2cl" },
+      { ingredient: "Lime Juice", amount: "2cl" },
+      { ingredient: "Almond Syrup", amount: "1cl" },
     ],
+    image: "https://drinkch.rokka.io/new-composition-1200/o-dpr-2/e62c1a.jpg",
   },
 
   {
-    id: 16,
+    id: 5007,
     name: "Americano",
     category: "Cocktail",
     price: 9.8,
-    image: "https://es.inshaker.com/uploads/cocktail/promo/16/square_1580912079-Americano_______960_600.jpg",
-    description: "Classic Italian aperitif cocktail.",
+
     garnish: "Orange",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 11,
+
+    tags: ["bitter", "aperitif", "italian"],
+
     recipe: [
-      "Campari",
-      "Red Vermouth",
-      "Soda"
+      { ingredient: "Campari", amount: "3cl" },
+      { ingredient: "Red Vermouth", amount: "3cl" },
+      { ingredient: "Soda", amount: "Top" },
     ],
+    image:"https://es.inshaker.com/uploads/cocktail/promo/16/medium_1580912079-Americano_______960_600.jpg",
   },
 
   {
-    id: 17,
+    id: 5008,
     name: "Sebis Summit",
     category: "Cocktail",
     price: 11.2,
-    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
-    description: "Tropical Jagermeister cocktail.",
+
     garnish: "Pineapple",
+
+    featured: true,
+    difficulty: "medium",
+    abv: 18,
+
+    tags: ["signature", "tropical", "jagermeister"],
+
     recipe: [
-      "Jagermeister",
-      "Dark Rum",
-      "Pineapple Juice",
-      "Coconut"
+      { ingredient: "Jagermeister", amount: "4cl" },
+      { ingredient: "Dark Rum", amount: "2cl" },
+      { ingredient: "Pineapple Juice", amount: "6cl" },
+      { ingredient: "Coconut", amount: "2cl" },
     ],
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyKpdY3xjuX2ShwkT-K-T283-Cbwt5zo7rJw&s",
+
   },
 
   {
-    id: 18,
+    id: 5009,
     name: "Gin Fizz",
     category: "Cocktail",
     price: 10.2,
-    image: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/tom-collins-04badba.jpg?quality=90&resize=440,400",
-    description: "Refreshing gin cocktail with soda.",
+
     garnish: "Lemon",
+
+    featured: false,
+    difficulty: "medium",
+
+    tags: ["refreshing", "citrus", "classic"],
+
     recipe: [
-      "Gin",
-      "Lemon Juice",
-      "Sugar Syrup",
-      "Soda"
+      { ingredient: "Gin", amount: "5cl" },
+      { ingredient: "Lemon Juice", amount: "3cl" },
+      { ingredient: "Sugar Syrup", amount: "2cl" },
+      { ingredient: "Soda", amount: "Top" },
     ],
+    image:"https://www.ginnig.de/_next/image?url=https%3A%2F%2Fcdn.ginnig-media.de%2Fproduction%2Fu5hcvfvvq7v8qyqtzv4nimbczten&w=3840&q=95",
   },
 
   {
-    id: 19,
+    id: 5010,
     name: "Daiquiri",
     category: "Cocktail",
     price: 10.2,
-    image: "https://www.afarmgirlsdabbles.com/wp-content/uploads/2023/06/daiquiri-afarmgirlsdabbles-01h.jpg",
-    description: "Classic rum sour cocktail.",
-    garnish: "Lime",
-    recipe: [
-      "Rum",
-      "Sugar Syrup",
-      "Lime Juice"
-    ],
-  },
 
-  // SOURS
+    garnish: "Lime",
+
+    featured: false,
+    difficulty: "easy",
+
+    tags: ["rum", "sour", "classic"],
+
+    recipe: [
+      { ingredient: "Rum", amount: "5cl" },
+      { ingredient: "Sugar Syrup", amount: "2cl" },
+      { ingredient: "Lime Juice", amount: "3cl" },
+    ],
+    image: "https://flawless.life/wp-content/uploads/2024/10/La-Ricetta-del-Daiquiri-cover-1.jpg",
+  },
+]
+export const sours = [
   {
-    id: 20,
+    id: 6000,
     name: "Amaretto Sour",
     category: "Sour",
     price: 11.2,
-    image: "https://assets.epicurious.com/photos/643ffefcefb46b50556ffb73/1:1/w_2560%2Cc_limit/Amaretto%2520Sour-RECIPE.jpg",
-    description: "Sweet almond sour cocktail.",
+
     garnish: "Orange",
+
+    featured: true,
+    difficulty: "easy",
+    abv: 15,
+
+    tags: ["sweet", "almond", "sour"],
+
     recipe: [
-      "Amaretto",
-      "Orange Juice",
-      "Lemon Juice",
-      "Sugar Syrup"
+      { ingredient: "Amaretto", amount: "5cl" },
+      { ingredient: "Orange Juice", amount: "2cl" },
+      { ingredient: "Lemon Juice", amount: "3cl" },
+      { ingredient: "Sugar Syrup", amount: "1cl" },
     ],
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk5WCNinILfj60BezAWdF3bUkHYuqKZh38dQ&s",
   },
 
   {
-    id: 21,
+    id: 6001  ,
     name: "Whiskey Sour",
     category: "Sour",
     price: 11.2,
-    image: "https://cdnx.jumpseller.com/la-vinateria/image/64241274/whiskeysourADOBE__1_.jpg?1749091546",
-    description: "Classic whiskey sour.",
+
     garnish: "Lemon",
+
+    featured: true,
+    difficulty: "easy",
+    abv: 18,
+
+    tags: ["classic", "whiskey", "sour"],
+
     recipe: [
-      "Whiskey",
-      "Lemon Juice",
-      "Sugar Syrup"
+      { ingredient: "Whiskey", amount: "5cl" },
+      { ingredient: "Lemon Juice", amount: "3cl" },
+      { ingredient: "Sugar Syrup", amount: "2cl" },
     ],
+    image: "https://image.essen-und-trinken.de/11940072/t/j1/v10/w960/r1/-/whiskeysour-jpg--58699-.jpg",
   },
 
   {
-    id: 22,
+    id: 6002,
     name: "Charly Sour",
     category: "Sour",
     price: 12.9,
-    image: "https://cdnx.jumpseller.com/la-vinateria/image/64241274/whiskeysourADOBE__1_.jpg?1749091546",
-    description: "Pear brandy sour with apple juice.",
+
     garnish: "Apple",
+
+    featured: true,
+    difficulty: "medium",
+    abv: 16,
+
+    tags: ["signature", "pear", "fruity"],
+
     recipe: [
-      "Williams Pear",
-      "Apple Juice",
-      "Lemon Juice",
-      "Sugar Syrup"
+      { ingredient: "Williams Pear", amount: "4cl" },
+      { ingredient: "Apple Juice", amount: "4cl" },
+      { ingredient: "Lemon Juice", amount: "2cl" },
+      { ingredient: "Sugar Syrup", amount: "1cl" },
     ],
+    image: "https://image.essen-und-trinken.de/11940072/t/j1/v10/w960/r1/-/whiskeysour-jpg--58699-.jpg",
   },
 
-  // NEGRONIS
   {
-    id: 23,
+    id: 6003,
+    name: "Aperol Sour",
+    category: "Sour",
+    price: 11.2,
+
+    garnish: "Orange",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 12,
+
+    tags: ["aperol", "citrus", "refreshing"],
+
+    recipe: [
+      { ingredient: "Aperol", amount: "5cl" },
+      { ingredient: "Lemon Juice", amount: "2cl" },
+      { ingredient: "Lime Juice", amount: "2cl" },
+      { ingredient: "Sugar Syrup", amount: "1cl" },
+    ],
+    image:"https://www.edeka.de/uploads/rezepte/rez-edeka-aperol-sour-rezept-a-d.jpg",
+  },
+]
+export const negronis = [
+  {
+    id: 7000,
     name: "Classic Negroni",
     category: "Negroni",
     price: 11.2,
-    image: "https://www.liquor.com/thmb/lbwu9mR7WPYq36cWAEbiCvGM2tQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/neighborhood-negroni-1200x628-fb-d5b216eacafc4c56abb866bae231bd83.jpg",
-    description: "Classic bitter Italian cocktail.",
+
     garnish: "Orange Peel",
+
+    featured: true,
+    difficulty: "easy",
+    abv: 24,
+
+    tags: ["classic", "bitter", "italian"],
+
     recipe: [
-      "Campari",
-      "Gin",
-      "Red Vermouth"
+      { ingredient: "Campari", amount: "3cl" },
+      { ingredient: "Gin", amount: "3cl" },
+      { ingredient: "Red Vermouth", amount: "3cl" },
     ],
+    image: "https://www.liquor.com/thmb/lbwu9mR7WPYq36cWAEbiCvGM2tQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/neighborhood-negroni-1200x628-fb-d5b216eacafc4c56abb866bae231bd83.jpg",
   },
 
   {
-    id: 24,
+    id: 7001,
     name: "Contessa Negroni",
     category: "Negroni",
     price: 11.2,
-    image: "https://www.liquor.com/thmb/lbwu9mR7WPYq36cWAEbiCvGM2tQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/neighborhood-negroni-1200x628-fb-d5b216eacafc4c56abb866bae231bd83.jpg",
-    description: "Aperol variation of the Negroni.",
+
     garnish: "Orange",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 20,
+
+    tags: ["aperol", "lighter", "italian"],
+
     recipe: [
-      "Aperol",
-      "Gin",
-      "Red Vermouth"
+      { ingredient: "Aperol", amount: "3cl" },
+      { ingredient: "Gin", amount: "3cl" },
+      { ingredient: "Red Vermouth", amount: "3cl" },
     ],
+     image: "https://www.liquor.com/thmb/lbwu9mR7WPYq36cWAEbiCvGM2tQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/neighborhood-negroni-1200x628-fb-d5b216eacafc4c56abb866bae231bd83.jpg",
   },
 
   {
-    id: 25,
+    id: 7002,
     name: "Boulevardier",
     category: "Negroni",
     price: 11.6,
-    image: "https://www.liquor.com/thmb/lbwu9mR7WPYq36cWAEbiCvGM2tQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/neighborhood-negroni-1200x628-fb-d5b216eacafc4c56abb866bae231bd83.jpg",
-    description: "Whiskey variation of the Negroni.",
+
     garnish: "Orange Peel",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 26,
+
+    tags: ["whiskey", "bitter", "classic"],
+
     recipe: [
-      "Campari",
-      "Bourbon Whiskey",
-      "Red Vermouth"
+      { ingredient: "Campari", amount: "3cl" },
+      { ingredient: "Bourbon Whiskey", amount: "3cl" },
+      { ingredient: "Red Vermouth", amount: "3cl" },
     ],
+     image: "https://www.liquor.com/thmb/lbwu9mR7WPYq36cWAEbiCvGM2tQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/neighborhood-negroni-1200x628-fb-d5b216eacafc4c56abb866bae231bd83.jpg",
   },
 
   {
-    id: 26,
+    id: 7003,
     name: "East India Negroni",
     category: "Negroni",
     price: 11.6,
-    image: "https://www.liquor.com/thmb/lbwu9mR7WPYq36cWAEbiCvGM2tQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/neighborhood-negroni-1200x628-fb-d5b216eacafc4c56abb866bae231bd83.jpg",
-    description: "Exotic Negroni variation with rum and sherry.",
-    garnish: "Orange",
-    recipe: [
-      "Rum",
-      "Sherry",
-      "Campari"
-    ],
-  },
 
-  // LONGDRINKS
+    garnish: "Orange",
+
+    featured: false,
+    difficulty: "medium",
+    abv: 24,
+
+    tags: ["rum", "sherry", "twist"],
+
+    recipe: [
+      { ingredient: "Rum", amount: "3cl" },
+      { ingredient: "Sherry", amount: "3cl" },
+      { ingredient: "Campari", amount: "3cl" },
+    ],
+     image: "https://www.liquor.com/thmb/lbwu9mR7WPYq36cWAEbiCvGM2tQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/neighborhood-negroni-1200x628-fb-d5b216eacafc4c56abb866bae231bd83.jpg",
+  },
+]
+export const longdrinks = [
   {
-    id: 27,
+    id: 8000,
     name: "Mojito",
     category: "Longdrink",
     price: 12.2,
-    image: "https://cuberspremium.com/wp-content/uploads/2017/07/receta-mojito.jpg",
-    description: "Fresh Cuban mint cocktail.",
+
     garnish: "Mint & Lime",
+
+    featured: true,
+    difficulty: "medium",
+    abv: 14,
+
+    tags: ["rum", "refreshing", "classic"],
+
     recipe: [
-      "Rum",
-      "Soda",
-      "Lime",
-      "Mint",
-      "Cane Sugar"
+      { ingredient: "Rum", amount: "5cl" },
+      { ingredient: "Soda", amount: "Top" },
+      { ingredient: "Lime", amount: "2cl" },
+      { ingredient: "Mint", amount: "8 leaves" },
+      { ingredient: "Cane Sugar", amount: "2 tsp" },
     ],
+    image: "https://img.chefkoch-cdn.de/rezepte/1163331222441467/bilder/1615560/crop-640x427/mojito.jpg",
   },
 
   {
-    id: 28,
+    id: 8001,
     name: "Tequila Sunrise",
     category: "Longdrink",
     price: 12.2,
-    image: "https://www.lurch.de/media/e5/fa/f2/1693302658/tequila-sunrise-cocktail-rezept.jpg?ts=1753782549",
-    description: "Sweet tequila cocktail with grenadine.",
+
     garnish: "Orange",
+
+    featured: false,
+    difficulty: "easy",
+
+    tags: ["tequila", "fruity", "sweet"],
+
     recipe: [
-      "Tequila",
-      "Orange Juice",
-      "Lemon Juice",
-      "Grenadine"
+      { ingredient: "Tequila", amount: "5cl" },
+      { ingredient: "Orange Juice", amount: "10cl" },
+      { ingredient: "Lemon Juice", amount: "1cl" },
+      { ingredient: "Grenadine", amount: "1cl" },
     ],
+    image: "https://drinkch.rokka.io/new-composition-1200/o-dpr-2/a1c57a.jpg",
   },
 
   {
-    id: 29,
+    id: 8002,
     name: "Caipirinha",
     category: "Longdrink",
     price: 12.2,
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/01/Caipirinha_with_lime.jpg",
-    description: "Brazilian cocktail with lime and sugar.",
+
     garnish: "Lime",
+
+    featured: true,
+
+    tags: ["brazilian", "cachaca", "classic"],
+
     recipe: [
-      "Cachaca",
-      "Lime",
-      "Cane Sugar"
+      { ingredient: "Cachaca", amount: "5cl" },
+      { ingredient: "Lime", amount: "1 whole" },
+      { ingredient: "Cane Sugar", amount: "2 tsp" },
     ],
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpfI7vD5b2nJRhf8UFyZ0dcH_K7pehNYFrsg&s",
   },
 
   {
-    id: 30,
+    id: 8003,
+    name: "Caipirol",
+    category: "Longdrink",
+    price: 12.2,
+
+    garnish: "Lime",
+
+    featured: false,
+
+    tags: ["aperol", "summer", "refreshing"],
+
+    recipe: [
+      { ingredient: "Aperol", amount: "5cl" },
+      { ingredient: "Lime", amount: "1 whole" },
+      { ingredient: "Cane Sugar", amount: "2 tsp" },
+      { ingredient: "Soda", amount: "Top" },
+    ],
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFvoah5Opm2TlABg_UipIhDKmjnJvvUtctjA&s",
+  },
+
+  {
+    id: 8004,
+    name: "Whisky Highball",
+    category: "Longdrink",
+    price: 10.4,
+
+    garnish: "Lemon",
+
+    featured: false,
+
+    tags: ["whiskey", "simple", "refreshing"],
+
+    recipe: [
+      { ingredient: "Whiskey", amount: "5cl" },
+      { ingredient: "Ginger Ale", amount: "Top" },
+    ],
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDexTCaFp2aockwZbAXCvxHgs8YFJ2DtiEZA&s",
+  },
+
+  {
+    id: 8005,
+    name: "Salty Dog",
+    category: "Longdrink",
+    price: 10.4,
+
+    garnish: "Salt Rim",
+
+    featured: false,
+
+    tags: ["grapefruit", "citrus", "refreshing"],
+
+    recipe: [
+      { ingredient: "Tequila", amount: "5cl" },
+      { ingredient: "Grapefruit Juice", amount: "10cl" },
+      { ingredient: "Soda", amount: "Top" },
+    ],
+    image: "https://cdn.diffordsguide.com/cocktail/gO3o4O/default/0/512x.webp?v=1737701580",
+  },
+
+  {
+    id: 8006,
     name: "Moscow Mule",
     category: "Longdrink",
     price: 12.2,
-    image: "https://static01.nyt.com/images/2023/11/14/multimedia/RS-Moscow-Mule-hbjv/RS-Moscow-Mule-hbjv-videoSixteenByNineJumbo1600.jpg",
-    description: "Vodka mule with ginger beer.",
+
     garnish: "Lime",
+
+    featured: true,
+
+    tags: ["vodka", "ginger", "popular"],
+
     recipe: [
-      "Vodka",
-      "Lime Juice",
-      "Spicy Ginger Beer"
+      { ingredient: "Vodka", amount: "5cl" },
+      { ingredient: "Lime Juice", amount: "2cl" },
+      { ingredient: "Spicy Ginger Beer", amount: "Top" },
     ],
+    image: "https://www.liquor.com/thmb/G5R_Y6cS-voBV1hYqI2mtoovoTQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/moscow-mule-4000x4000-primary-ig-3a364d63e57b4a9b8cf82ec1dc54eb30.jpg",
   },
 
   {
-    id: 31,
-    name: "Dark N Stormy",
+    id: 8007,
+    name: "Dark 'N' Stormy",
     category: "Longdrink",
     price: 12.2,
-    image: "https://www.alkoholfreishop.lu/media/catalog/product/cache/4a5cf70630b9c3080e492221e54d9a9f/d/a/dark-and-stormy-800x600.png",
-    description: "Dark rum and ginger beer cocktail.",
+
     garnish: "Lime",
+
+    featured: false,
+
+    tags: ["rum", "ginger", "classic"],
+
     recipe: [
-      "Dark Rum",
-      "Lime Juice",
-      "Spicy Ginger Beer"
+      { ingredient: "Dark Rum", amount: "5cl" },
+      { ingredient: "Lime Juice", amount: "2cl" },
+      { ingredient: "Spicy Ginger Beer", amount: "Top" },
     ],
+    image: "https://drinkch.rokka.io/new-composition-1200/o-dpr-2/58b21a.jpg",
   },
 
   {
-    id: 32,
+    id: 8008,
+    name: "German Mule",
+    category: "Longdrink",
+    price: 12.2,
+
+    garnish: "Lime",
+
+    featured: true,
+
+    tags: ["jagermeister", "ginger", "signature"],
+
+    recipe: [
+      { ingredient: "Jagermeister", amount: "5cl" },
+      { ingredient: "Lime Juice", amount: "2cl" },
+      { ingredient: "Spicy Ginger Beer", amount: "Top" },
+    ],
+     image: "https://www.liquor.com/thmb/G5R_Y6cS-voBV1hYqI2mtoovoTQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/moscow-mule-4000x4000-primary-ig-3a364d63e57b4a9b8cf82ec1dc54eb30.jpg",
+  
+  },
+
+  {
+    id: 8009,
+    name: "Italian Mule",
+    category: "Longdrink",
+    price: 12.2,
+
+    garnish: "Lime",
+
+    featured: false,
+
+    tags: ["amaretto", "cranberry", "ginger"],
+
+    recipe: [
+      { ingredient: "Amaretto", amount: "4cl" },
+      { ingredient: "Lime Juice", amount: "2cl" },
+      { ingredient: "Cranberry Juice", amount: "3cl" },
+      { ingredient: "Spicy Ginger Beer", amount: "Top" },
+    ],
+     image: "https://www.liquor.com/thmb/G5R_Y6cS-voBV1hYqI2mtoovoTQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/moscow-mule-4000x4000-primary-ig-3a364d63e57b4a9b8cf82ec1dc54eb30.jpg",
+  
+  },
+
+  {
+    id: 8010,
     name: "London Mule",
     category: "Longdrink",
     price: 12.2,
-    image: "https://static01.nyt.com/images/2023/11/14/multimedia/RS-Moscow-Mule-hbjv/RS-Moscow-Mule-hbjv-videoSixteenByNineJumbo1600.jpg",
-    description: "Gin-based mule cocktail.",
+
     garnish: "Lime",
+
+    featured: false,
+
+    tags: ["gin", "ginger", "refreshing"],
+
     recipe: [
-      "Gin",
-      "Lime Juice",
-      "Spicy Ginger Beer"
+      { ingredient: "Gin", amount: "5cl" },
+      { ingredient: "Lime Juice", amount: "2cl" },
+      { ingredient: "Spicy Ginger Beer", amount: "Top" },
     ],
+     image: "https://www.liquor.com/thmb/G5R_Y6cS-voBV1hYqI2mtoovoTQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/moscow-mule-4000x4000-primary-ig-3a364d63e57b4a9b8cf82ec1dc54eb30.jpg",
+  
+  },
+]
+export const alcoholFreeCocktails = [
+  {
+    id: 9000,
+    name: "Maracas",
+    category: "Alcohol Free",
+    price: 8.7,
+
+    garnish: "Orange",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 0,
+
+    tags: ["fruity", "tropical", "juice"],
+
+    recipe: [
+      { ingredient: "Pineapple Juice", amount: "4cl" },
+      { ingredient: "Orange Juice", amount: "4cl" },
+      { ingredient: "Grapefruit Juice", amount: "4cl" },
+      { ingredient: "Passion Fruit Juice", amount: "4cl" },
+    ],
+    image: "https://inmendoza.com/wp-content/uploads/2022/09/mocktails.jpg"
   },
 
-  // ALCOHOL FREE
   {
-    id: 33,
+    id: 9001,
+    name: "Paso Doble",
+    category: "Alcohol Free",
+    price: 8.7,
+
+    garnish: "Lemon",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 0,
+
+    tags: ["bitter", "citrus", "refreshing"],
+
+    recipe: [
+      { ingredient: "Lemon Juice", amount: "2cl" },
+      { ingredient: "Bitter Lemon", amount: "Top" },
+      { ingredient: "Sanbitter", amount: "4cl" },
+    ],
+    image: "https://inmendoza.com/wp-content/uploads/2022/09/mocktails.jpg",
+  },
+
+  {
+    id: 9002,
     name: "Virgin Mojito",
     category: "Alcohol Free",
     price: 8.7,
-    image: "https://cuberspremium.com/wp-content/uploads/2017/07/receta-mojito.jpg",
-    description: "Alcohol-free mojito with mint and lime.",
+
     garnish: "Mint & Lime",
+
+    featured: true,
+    difficulty: "easy",
+    abv: 0,
+
+    tags: ["mint", "refreshing", "classic"],
+
     recipe: [
-      "Ginger Ale",
-      "Lime Juice",
-      "Mint",
-      "Cane Sugar",
-      "Soda"
+      { ingredient: "Ginger Ale", amount: "6cl" },
+      { ingredient: "Lime Juice", amount: "2cl" },
+      { ingredient: "Mint", amount: "8 leaves" },
+      { ingredient: "Cane Sugar", amount: "2 tsp" },
+      { ingredient: "Soda", amount: "Top" },
     ],
+    image: "https://inmendoza.com/wp-content/uploads/2022/09/mocktails.jpg",
   },
 
   {
-    id: 34,
+    id: 9003,
+    name: "Apfelblüte",
+    category: "Alcohol Free",
+    price: 8.7,
+
+    garnish: "Apple",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 0,
+
+    tags: ["apple", "floral", "sweet"],
+
+    recipe: [
+      { ingredient: "Apple Juice", amount: "6cl" },
+      { ingredient: "Lemon Juice", amount: "2cl" },
+      { ingredient: "Elderflower Syrup", amount: "2cl" },
+      { ingredient: "Grenadine", amount: "1cl" },
+    ],
+    image: "https://inmendoza.com/wp-content/uploads/2022/09/mocktails.jpg",
+  },
+
+  {
+    id: 9004,
     name: "Ipanema",
     category: "Alcohol Free",
     price: 8.7,
-    image: "https://cdn.diffordsguide.com/cocktail/rygZ4R/default/0/512x.webp?v=1737701597",
-    description: "Tropical alcohol-free cocktail.",
+
     garnish: "Lime",
+
+    featured: true,
+    difficulty: "easy",
+    abv: 0,
+
+    tags: ["tropical", "lime", "refreshing"],
+
     recipe: [
-      "Passion Fruit Juice",
-      "Lime",
-      "Ginger Ale",
-      "Cane Sugar"
+      { ingredient: "Passion Fruit Juice", amount: "6cl" },
+      { ingredient: "Lime", amount: "1 whole" },
+      { ingredient: "Ginger Ale", amount: "Top" },
+      { ingredient: "Cane Sugar", amount: "2 tsp" },
     ],
+    image: "https://inmendoza.com/wp-content/uploads/2022/09/mocktails.jpg",
   },
 
   {
-    id: 35,
+    id: 9005,
     name: "Bora Bora",
     category: "Alcohol Free",
     price: 8.7,
-    image: "https://cdn.diffordsguide.com/cocktail/rygZ4R/default/0/512x.webp?v=1737701597",
-    description: "Creamy tropical mocktail.",
+
     garnish: "Pineapple",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 0,
+
+    tags: ["tropical", "coconut", "sweet"],
+
     recipe: [
-      "Coconut",
-      "Pineapple Juice",
-      "Passion Fruit Juice",
-      "Grenadine"
+      { ingredient: "Coconut", amount: "3cl" },
+      { ingredient: "Pineapple Juice", amount: "6cl" },
+      { ingredient: "Passion Fruit Juice", amount: "4cl" },
+      { ingredient: "Grenadine", amount: "1cl" },
     ],
+    image: "https://inmendoza.com/wp-content/uploads/2022/09/mocktails.jpg",
   },
 
-  // SUMMER COCKTAILS
   {
-    id: 36,
-    name: "Bob Marley",
-    category: "Summer Cocktail",
+    id: 9006,
+    name: "Pink Panther",
+    category: "Alcohol Free",
+    price: 8.7,
+
+    garnish: "Orange",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 0,
+
+    tags: ["coconut", "citrus", "sweet"],
+
+    recipe: [
+      { ingredient: "Orange Juice", amount: "6cl" },
+      { ingredient: "Coconut", amount: "3cl" },
+      { ingredient: "Grenadine", amount: "1cl" },
+      { ingredient: "Bitter Lemon", amount: "Top" },
+    ],
+    image: "https://inmendoza.com/wp-content/uploads/2022/09/mocktails.jpg",
+  },
+
+  {
+    id: 9007,
+    name: "Bitter Cassis",
+    category: "Alcohol Free",
+    price: 8.7,
+
+    garnish: "Berries",
+
+    featured: false,
+    difficulty: "easy",
+    abv: 0,
+
+    tags: ["berries", "cassis", "bitter"],
+
+    recipe: [
+      { ingredient: "Berries", amount: "3cl" },
+      { ingredient: "Apple Juice", amount: "5cl" },
+      { ingredient: "Sanbitter", amount: "4cl" },
+      { ingredient: "Blackcurrant Juice", amount: "4cl" },
+    ],
+    image: "https://inmendoza.com/wp-content/uploads/2022/09/mocktails.jpg",
+  },
+  {
+  id: 9008,
+  name: "No Apero Spritz",
+  category: "Alcohol Free",
+  price: 9.4,
+
+  garnish: "Orange",
+
+  featured: true,
+  difficulty: "easy",
+  abv: 0,
+
+  tags: ["spritz", "aperitif", "alcohol-free"],
+
+  recipe: [
+    { ingredient: "Undone No.5", amount: "5cl" },
+    { ingredient: "Alcohol Free Sparkling Wine", amount: "8cl" },
+    { ingredient: "Orange", amount: "Garnish" },
+    { ingredient: "Soda", amount: "Top" },
+  ],
+  image: "https://inmendoza.com/wp-content/uploads/2022/09/mocktails.jpg",
+},
+
+{
+  id: 9009,
+  name: "Wild Bitter",
+  category: "Alcohol Free",
+  price: 9.4,
+
+  garnish: "Lime",
+
+  featured: false,
+  difficulty: "easy",
+  abv: 0,
+
+  tags: ["bitter", "wild-berry", "alcohol-free"],
+
+  recipe: [
+    { ingredient: "Undone No.8", amount: "5cl" },
+    { ingredient: "Wild Berry", amount: "6cl" },
+    { ingredient: "Lime", amount: "Garnish" },
+    { ingredient: "Tonic Water", amount: "Top" },
+  ],
+  image: "https://inmendoza.com/wp-content/uploads/2022/09/mocktails.jpg",
+},
+
+{
+  id: 9010,
+  name: "French Wild Berry",
+  category: "Alcohol Free",
+  price: 9.4,
+
+  garnish: "Berries",
+
+  featured: false,
+  difficulty: "easy",
+  abv: 0,
+
+  tags: ["berries", "fruity", "alcohol-free"],
+
+  recipe: [
+    { ingredient: "Undone No.8", amount: "5cl" },
+    { ingredient: "Wild Berry", amount: "Top" },
+    { ingredient: "Berries", amount: "Garnish" },
+  ],
+  image: "https://inmendoza.com/wp-content/uploads/2022/09/mocktails.jpg",
+},
+
+{
+  id: 9011,
+  name: "No Apero Sour",
+  category: "Alcohol Free",
+  price: 9.4,
+
+  garnish: "Lemon",
+
+  featured: false,
+  difficulty: "easy",
+  abv: 0,
+
+  tags: ["sour", "aperitif", "alcohol-free"],
+
+  recipe: [
+    { ingredient: "Undone No.5", amount: "5cl" },
+    { ingredient: "Lemon Juice", amount: "3cl" },
+    { ingredient: "Sugar Syrup", amount: "2cl" },
+  ],
+  image: "https://inmendoza.com/wp-content/uploads/2022/09/mocktails.jpg",
+},
+]
+
+export const fortifiedWines = [
+  {
+    id: 12500,
+    name: "Charly's Likörwein Hans Rebholz",
+    category: "Fortified Wine",
+    origin: "Bodensee",
+    volume: "5cl",
+    price: 6.2,
+
+    featured: true,
+
+    tags: ["dessert", "sweet", "regional"],
+
+    abv: 18,
+    image: "https://images.vivino.com/labels/9gv8Ehk9TBKU1fIoNWZtwQ.jpg",
+  },
+
+  {
+    id: 12501,
+    name: "Niepoort Vintage Port 2019",
+    category: "Port Wine",
+    origin: "Portugal",
+    volume: "5cl",
+    price: 17.4,
+
+    featured: true,
+
+    tags: ["vintage", "port", "premium"],
+
+    abv: 20,
+    image: "https://www.buonvino.co.uk/app/uploads/Vintage_Port_Niepoort_2019.jpg",
+  },
+
+  {
+    id: 12502,
+    name: "Quevedo Vintage Port 2018",
+    category: "Port Wine",
+    origin: "Portugal",
+    volume: "5cl",
     price: 12.9,
-    image: "https://cdn.diffordsguide.com/cocktail/rygZ4R/default/0/512x.webp?v=1737701597",
-    description: "Fruity rum cocktail with blue curacao.",
-    garnish: "Pineapple",
-    recipe: [
-      "Pineapple",
-      "Grenadine",
-      "Rum",
-      "Blue Curacao"
-    ],
+
+    tags: ["vintage", "port"],
+
+    abv: 20,
+    image:"https://gebertportwein.de/media/0f/c5/0a/1730287155/QUEVEDO_special_LBV2018NOBG.webp",
   },
 
   {
-    id: 37,
-    name: "Ocean Spritz",
-    category: "Summer Cocktail",
-    price: 9.4,
-    image: "https://cdn.diffordsguide.com/cocktail/rygZ4R/default/0/512x.webp?v=1737701597",
-    description: "Blue summer spritz with limoncello.",
-    garnish: "Lemon",
-    recipe: [
-      "Blue Curacao",
-      "Limoncello",
-      "Secco",
-      "Soda"
-    ],
+    id: 12503,
+    name: "Quevedo Colheita Port 2008",
+    category: "Port Wine",
+    origin: "Portugal",
+    volume: "5cl",
+    price: 17.4,
+
+    tags: ["colheita", "aged", "premium"],
+
+    abv: 20,
+    image: "https://gebertportwein.de/media/35/be/8d/1719756478/QUEVEDO_landmark_colheita2008_NOBG.webp",
   },
 
   {
-    id: 38,
-    name: "Sangria A la Hirschen",
-    category: "Summer Cocktail",
-    price: 12.6,
-    image: "https://cdn.diffordsguide.com/cocktail/rygZ4R/default/0/512x.webp?v=1737701597",
-    description: "House sangria with fruit and rum.",
-    garnish: "Orange Slice",
-    recipe: [
-      "Red Wine",
-      "Rum",
-      "Orange",
-      "Pineapple",
-      "Apple",
-      "Lemon"
-    ],
+    id: 12504,
+    name: "Quevedo Tawny Port 10 Years",
+    category: "Port Wine",
+    origin: "Portugal",
+    volume: "5cl",
+    price: 12.9,
+
+    tags: ["tawny", "aged", "nutty"],
+
+    abv: 20,
+    image: "https://www.wein-riegger.de/media/86/77/d2/1775575250/quevedo-tawny-port-10-jahre-05859.webp?ts=1775575250",
   },
 
+  {
+    id: 12505,
+    name: "Quevedo Ruby Port",
+    category: "Port Wine",
+    origin: "Portugal",
+    volume: "5cl",
+    price: 9.9,
+
+    tags: ["ruby", "fruit-forward", "port"],
+
+    abv: 20,
+    image: "https://www.wein-riegger.de/media/a9/96/1f/1775575277/quevedo-ruby-port-05855.webp?ts=1775575277",
+  },
 ]
-
 export const spirits = [
+  // BITTER
+
   {
-    id: 1,
-    name: "Monkey 47 Gin",
-    category: "Gin",
-    price: 12.2,
+    id: 13200,
+    name: "Fernet Branca",
+    category: "Bitter",
+    volume: "2cl",
+    price: 5.1,
+
+    origin: "Italy",
+
+    tags: ["amaro", "herbal", "digestif"],
+    image: "https://www.wein-riegger.de/media/7d/68/e1/1764676498/fernet-branca-12541.webp?ts=1764676498",
   },
 
   {
-    id: 2,
-    name: "Hendricks Gin",
-    category: "Gin",
-    price: 11.2,
+    id: 13201,
+    name: "Jägermeister",
+    category: "Bitter",
+    volume: "2cl",
+    price: 5.1,
+
+    origin: "Germany",
+
+    tags: ["herbal", "digestif"],
+    image: "https://cdn.shopify.com/s/files/1/0715/5302/4315/files/JM_original_0-7l-freigestellt_2025.png?v=1763568432&width=3840&quality=75",
   },
 
   {
-    id: 3,
-    name: "Woodford Reserve Bourbon",
-    category: "Whiskey",
+    id: 13202,
+    name: "Underberg",
+    category: "Bitter",
+    volume: "2cl",
+    price: 5.1,
+
+    origin: "Germany",
+
+    tags: ["digestif", "herbal"],
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Underberg_4442963885_e200c994e2_t.jpg/960px-Underberg_4442963885_e200c994e2_t.jpg",
+  },
+
+  {
+    id: 13203,
+    name: "Ramazzotti",
+    category: "Amaro",
+    volume: "4cl",
+    price: 5.1,
+
+    origin: "Italy",
+
+    tags: ["amaro", "sweet", "digestif"],
+      image: "https://m.media-amazon.com/images/I/61KK2YHIBVL.jpg",
+  },
+
+  {
+    id: 13204,
+    name: "Averna Amaro",
+    category: "Amaro",
+    volume: "4cl",
+    price: 5.6,
+
+    origin: "Italy",
+
+    tags: ["amaro", "digestif"],
+    image: "https://m.media-amazon.com/images/I/61VlDcHk82L.jpg",
+  },
+
+  {
+    id: 13205,
+    name: "Cynar",
+    category: "Amaro",
+    volume: "4cl",
+    price: 6.5,
+
+    origin: "Italy",
+
+    tags: ["artichoke", "amaro", "bitter"],
+    image: "https://m.media-amazon.com/images/I/81lAOeqByWL._AC_UF350,350_QL80_.jpg",
+  },
+
+  // WHISKY
+
+  {
+    id: 13100,
+    name: "Woodford Reserve Kentucky Straight Bourbon",
+    category: "Whisky",
+    style: "Bourbon",
+    origin: "USA",
+
+    volume: "4cl",
     price: 8.6,
+
+    tags: ["bourbon", "kentucky"],
+    image: "https://images.shop.frankfurt-airport.com/pim/defaults/1200x,jpeg/catalog/6/6/b/4/66b48e8a4355da22674fd23f0c085a5a_115046.jpg",
   },
 
   {
-    id: 4,
-    name: "Blantons Original",
-    category: "Whiskey",
+    id: 13101,
+    name: "Blanton's Original Single Barrel Bourbon",
+    category: "Whisky",
+    style: "Single Barrel Bourbon",
+    origin: "USA",
+
+    volume: "4cl",
     price: 15.4,
+
+    featured: true,
+
+    tags: ["bourbon", "single-barrel", "premium"],
+    image: "https://www.beowein.de/wp-content/uploads/files/4/4/44160_blantons_original_2014_fl.gif",
   },
 
   {
-    id: 5,
-    name: "Glenmorangie 18",
-    category: "Whiskey",
-    price: 19.4,
+    id: 13102,
+    name: "Glenallachie 12",
+    category: "Whisky",
+    style: "Single Malt",
+    region: "Speyside",
+    origin: "Scotland",
+
+    age: 12,
+
+    volume: "4cl",
+    price: 11.2,
+
+    tags: ["single-malt", "speyside"],
+    image: "https://t3.ftcdn.net/jpg/00/79/80/64/360_F_79806410_EoUdAwMqXwdt2WOAvnWHOWXzNhSWs9Ew.jpg",
   },
 
   {
-    id: 6,
-    name: "Hampden 8 Jahre",
-    category: "Rum",
-    price: 15.3,
+    id: 13103,
+    name: "Benromach 15",
+    category: "Whisky",
+    style: "Single Malt",
+    region: "Speyside",
+    origin: "Scotland",
+
+    age: 15,
+
+    volume: "4cl",
+    price: 12.5,
+
+    tags: ["single-malt", "speyside"],
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdEvWGZN8ShaJlz7D4NQvanLz9dLJZt6-tDA&s",
   },
 
   {
-    id: 7,
-    name: "Cartavio XO 18",
-    category: "Rum",
-    price: 13.2,
+    id: 13104,
+    name: "Port Charlotte 10",
+    category: "Whisky",
+    style: "Single Malt",
+    region: "Islay",
+    origin: "Scotland",
+
+    age: 10,
+
+    volume: "4cl",
+    price: 13.3,
+
+    tags: ["islay", "peated", "smoky"],
+    image: "https://whic-sw-prod.b-cdn.net/media/d8/59/22/1687828514/e6f5c1ceb74eba268cbbd31862d68a7e.jpg?width=3000",
   },
+
+  {
+    id: 13105,
+    name: "Octomore Edition 15.1",
+    category: "Whisky",
+    style: "Single Malt",
+    region: "Islay",
+    origin: "Scotland",
+
+    age: 5,
+
+    volume: "4cl",
+    price: 23.4,
+
+    featured: true,
+
+    tags: ["islay", "heavily-peated", "premium"],
+    image: "https://images.shop.frankfurt-airport.com/pim/defaults/1200x,jpeg/catalog/6/c/d/4/6cd48f9d8beb0a72b4114b95753d7edc_1685631.jpg",
+  },
+  // WHISKY
+
+{
+  id: 13106,
+  name: "Dalwhinnie 15",
+  category: "Whisky",
+  style: "Single Malt",
+  region: "Highlands",
+  origin: "Scotland",
+
+  age: 15,
+
+  volume: "4cl",
+  price: 12.2,
+
+  tags: ["highlands", "single-malt"],
+  image: "https://www.rumundco.de/media/8b/f2/0f/1747045677/20183-png.png",
+},
+
+{
+  id: 13107,
+  name: "Glenturret 12",
+  category: "Whisky",
+  style: "Single Malt",
+  region: "Highlands",
+  origin: "Scotland",
+
+  age: 12,
+
+  volume: "4cl",
+  price: 13.3,
+
+  tags: ["highlands", "single-malt"],
+  image: "https://m.media-amazon.com/images/I/51MEZd216uL._AC_UF1000,1000_QL80_.jpg",
+},
+
+{
+  id: 13108,
+  name: "Old Pulteney 12",
+  category: "Whisky",
+  style: "Single Malt",
+  region: "Highlands",
+  origin: "Scotland",
+
+  age: 12,
+
+  volume: "4cl",
+  price: 11.2,
+
+  tags: ["highlands", "coastal", "single-malt"],
+  image: "https://m.media-amazon.com/images/I/81q+piIuSxL._AC_UF1000,1000_QL80_.jpg",
+},
+
+{
+  id: 13109,
+  name: "Glenmorangie Sherry Cask",
+  category: "Whisky",
+  style: "Single Malt",
+  region: "Highlands",
+  origin: "Scotland",
+
+  age: 12,
+
+  volume: "4cl",
+  price: 12.2,
+
+  tags: ["highlands", "sherry-cask"],
+  image: "https://cdn.public.steam-time.de/images/.public/org/Glenmorangie-12YO-Lasanta-1200.jpg",
+},
+
+{
+  id: 13110,
+  name: "Glenmorangie 18",
+  category: "Whisky",
+  style: "Single Malt",
+  region: "Highlands",
+  origin: "Scotland",
+
+  age: 18,
+
+  volume: "4cl",
+  price: 19.4,
+
+  featured: true,
+
+  tags: ["highlands", "aged", "premium"],
+  image: "https://m.media-amazon.com/images/I/61svejZpR2L._AC_UF1000,1000_QL80_.jpg",
+},
+
+{
+  id: 13111,
+  name: "Glenmorangie Signet",
+  category: "Whisky",
+  style: "Single Malt",
+  region: "Highlands",
+  origin: "Scotland",
+
+  volume: "4cl",
+  price: 25.9,
+
+  featured: true,
+
+  tags: ["highlands", "luxury", "premium"],
+  image: "https://www.beowein.de/wp-content/uploads/2026/03/42176_glenmorangie_signet_reserve_Portrait.webp",
+},
+
+{
+  id: 13112,
+  name: "Bodensee Whisky Senft",
+  category: "Whisky",
+  style: "Single Malt",
+  origin: "Germany",
+  region: "Bodensee",
+
+  volume: "4cl",
+  price: 10.8,
+
+  tags: ["regional", "german-whisky"],
+  image: "https://www.senft-destillerie.de/media/a7/6e/24/1730120481/SENFT-Whisky-07-Produktbild.webp?ts=1733482291",
+},
+
+// FRUCHTBRÄNDE - REBHOLZ
+
+{
+  id: 13400,
+  name: "Cox Orange",
+  category: "Fruit Brandy",
+  producer: "Rebholz",
+  volume: "2cl",
+  price: 6.2,
+
+  origin: "Germany",
+  region: "Bodensee",
+
+  tags: ["apple", "fruit-brandy"],
+  image: "https://rebholz-edelbraende.de/wp-content/uploads/2016/05/bodensee-coexchen-flasche-1.png",
+},
+
+{
+  id: 13401,
+  name: "Obstler",
+  category: "Fruit Brandy",
+  producer: "Rebholz",
+  volume: "2cl",
+  price: 6.2,
+
+  origin: "Germany",
+  region: "Bodensee",
+
+  tags: ["fruit-brandy", "traditional"],
+  image: "https://rebholz-edelbraende.de/wp-content/uploads/2016/05/bodensee-obstbrand-flasche.png",
+},
+
+{
+  id: 13402,
+  name: "Schlehe",
+  category: "Fruit Brandy",
+  producer: "Rebholz",
+  volume: "2cl",
+  price: 6.2,
+
+  origin: "Germany",
+  region: "Bodensee",
+
+  tags: ["sloe", "fruit-brandy"],
+  image: "https://rebholz-edelbraende.de/wp-content/uploads/2016/05/bodensee-schlehengeist-flasche-preview.png",
+},
+// FRUIT BRANDY - SENFT
+
+{
+  id: 13403,
+  name: "Mirabelle Selektion Frucht",
+  category: "Fruit Brandy",
+  producer: "Senft",
+
+  volume: "2cl",
+  price: 7.2,
+
+  origin: "Germany",
+  region: "Bodensee",
+
+  tags: ["mirabelle", "fruit-brandy"],
+},
+
+{
+  id: 13404,
+  name: "Williams Selektion Frucht",
+  category: "Fruit Brandy",
+  producer: "Senft",
+
+  volume: "2cl",
+  price: 7.2,
+
+  origin: "Germany",
+  region: "Bodensee",
+
+  tags: ["pear", "fruit-brandy"],
+},
+
+{
+  id: 13405,
+  name: "Himbeergeist",
+  category: "Fruit Brandy",
+  producer: "Senft",
+
+  volume: "2cl",
+  price: 7.2,
+
+  origin: "Germany",
+  region: "Bodensee",
+
+  tags: ["raspberry", "geist"],
+},
+
+{
+  id: 13406,
+  name: "Zwetschgenbrand",
+  category: "Fruit Brandy",
+  producer: "Senft",
+
+  volume: "2cl",
+  price: 7.2,
+
+  origin: "Germany",
+  region: "Bodensee",
+
+  tags: ["plum", "fruit-brandy"],
+},
+
+{
+  id: 13407,
+  name: "Kirschwasser",
+  category: "Fruit Brandy",
+  producer: "Senft",
+
+  volume: "2cl",
+  price: 6.2,
+
+  origin: "Germany",
+  region: "Bodensee",
+
+  tags: ["cherry", "fruit-brandy"],
+},
+
+// FRUIT BRANDY - SCHEIBEL
+
+{
+  id: 13408,
+  name: "Alte Zeit Wild Himbeerbrand",
+  category: "Fruit Brandy",
+  producer: "Scheibel",
+
+  volume: "2cl",
+  price: 13.2,
+
+  origin: "Germany",
+
+  featured: true,
+
+  tags: ["raspberry", "premium"],
+},
+
+{
+  id: 13409,
+  name: "Alte Zeit Ziebrärtle",
+  category: "Fruit Brandy",
+  producer: "Scheibel",
+
+  volume: "2cl",
+  price: 13.2,
+
+  origin: "Germany",
+
+  tags: ["premium"],
+},
+
+{
+  id: 13410,
+  name: "Alte Zeit Gelbe Bergpflaume",
+  category: "Fruit Brandy",
+  producer: "Scheibel",
+
+  volume: "2cl",
+  price: 15.3,
+
+  origin: "Germany",
+
+  featured: true,
+
+  tags: ["plum", "premium"],
+},
+
+{
+  id: 13411,
+  name: "Haselnuss",
+  category: "Fruit Brandy",
+  producer: "Scheibel",
+
+  volume: "2cl",
+  price: 10.2,
+
+  origin: "Germany",
+
+  tags: ["hazelnut"],
+},
+
+// FRUIT BRANDY - SPIRITUS REX
+
+{
+  id: 13412,
+  name: "Bloody O",
+  subtitle: "Blutorange",
+
+  category: "Fruit Brandy",
+  producer: "Spiritus Rex",
+
+  volume: "2cl",
+  price: 17.4,
+
+  tags: ["blood-orange", "premium"],
+},
+
+{
+  id: 13413,
+  name: "Maxima Sinsensis",
+  subtitle: "Grapefruit",
+
+  category: "Fruit Brandy",
+  producer: "Spiritus Rex",
+
+  volume: "2cl",
+  price: 19.4,
+
+  tags: ["grapefruit", "premium"],
+},
+
+{
+  id: 13414,
+  name: "Tardivo Di Ciaculli",
+  subtitle: "Mandarine",
+
+  category: "Fruit Brandy",
+  producer: "Spiritus Rex",
+
+  volume: "2cl",
+  price: 19.4,
+
+  tags: ["mandarin", "premium"],
+},
+
+{
+  id: 13415,
+  name: "Griotte Du Nord",
+  subtitle: "Schattenmorelle",
+
+  category: "Fruit Brandy",
+  producer: "Spiritus Rex",
+
+  volume: "2cl",
+  price: 19.4,
+
+  tags: ["cherry", "premium"],
+},
+
+{
+  id: 13416,
+  name: "Ficus Indica",
+  subtitle: "Kaktusfeige",
+
+  category: "Fruit Brandy",
+  producer: "Spiritus Rex",
+
+  volume: "2cl",
+  price: 19.4,
+
+  tags: ["cactus-pear", "premium"],
+},
+
+{
+  id: 13417,
+  name: "Marille Marquess",
+  subtitle: "Wachauer Marille",
+
+  category: "Fruit Brandy",
+  producer: "Spiritus Rex",
+
+  volume: "2cl",
+  price: 19.4,
+
+  tags: ["apricot", "premium"],
+},
+
+{
+  id: 13418,
+  name: "Etrog",
+  subtitle: "Amalfi Zitrone",
+
+  category: "Fruit Brandy",
+  producer: "Spiritus Rex",
+
+  volume: "2cl",
+  price: 19.4,
+
+  tags: ["lemon", "premium"],
+},
+
+{
+  id: 13419,
+  name: "Nööt",
+  subtitle: "Piemonteser Haselnuss",
+
+  category: "Fruit Brandy",
+  producer: "Spiritus Rex",
+
+  volume: "2cl",
+  price: 19.4,
+
+  tags: ["hazelnut", "premium"],
+},
+
+// ETTER
+
+{
+  id: 13420,
+  name: "Vielle Prune",
+  category: "Fruit Brandy",
+  producer: "Etter",
+
+  volume: "2cl",
+  price: 8.7,
+
+  origin: "Switzerland",
+
+  tags: ["plum"],
+},
+
+{
+  id: 13421,
+  name: "Vielle Orange",
+  category: "Fruit Brandy",
+  producer: "Etter",
+
+  volume: "2cl",
+  price: 8.7,
+
+  origin: "Switzerland",
+
+  tags: ["orange"],
+},
+// GRAPPA & TRESTERBRÄNDE
+
+{
+  id: 13500,
+  name: "Grappa di Prosecco",
+  category: "Grappa",
+  producer: "Andrea da Ponte",
+
+  volume: "2cl",
+  price: 5.7,
+
+  origin: "Italy",
+
+  tags: ["prosecco", "grappa"],
+},
+
+{
+  id: 13501,
+  name: "Grappa Barolo Riserva",
+  year: 2004,
+
+  category: "Grappa",
+  producer: "Erboristica Alpina",
+
+  volume: "2cl",
+  price: 14.4,
+
+  origin: "Italy",
+
+  featured: true,
+
+  tags: ["barolo", "riserva", "premium"],
+},
+
+{
+  id: 13502,
+  name: "Grappa Antica Cuvée",
+  age: 5,
+
+  category: "Grappa",
+  producer: "Nonino",
+
+  volume: "2cl",
+  price: 8.7,
+
+  origin: "Italy",
+
+  tags: ["aged", "grappa"],
+},
+
+{
+  id: 13503,
+  name: "Grappa Riserva 15 Anni",
+  age: 15,
+
+  category: "Grappa",
+  producer: "Nardini",
+
+  volume: "2cl",
+  price: 15.4,
+
+  origin: "Italy",
+
+  featured: true,
+
+  tags: ["riserva", "aged", "premium"],
+},
+
+{
+  id: 13504,
+  name: "Grappa Riserva 50°",
+
+  category: "Grappa",
+  producer: "Nardini",
+
+  volume: "2cl",
+  price: 9.3,
+
+  origin: "Italy",
+
+  abv: 50,
+
+  tags: ["strong", "riserva"],
+},
+
+{
+  id: 13505,
+  name: "Bodensee-Marc",
+
+  category: "Marc",
+  producer: "Senft",
+
+  volume: "2cl",
+  price: 7.2,
+
+  origin: "Germany",
+  region: "Bodensee",
+
+  tags: ["marc", "regional"],
+},
+
+// VODKA
+
+{
+  id: 13600,
+  name: "Absolut Vodka",
+
+  category: "Vodka",
+
+  volume: "2cl",
+  price: 8.7,
+
+  origin: "Sweden",
+
+  tags: ["classic", "vodka"],
+},
+
+{
+  id: 13601,
+  name: "Senft Vodka Reserve",
+
+  category: "Vodka",
+  producer: "Senft",
+
+  volume: "2cl",
+  price: 9.7,
+
+  origin: "Germany",
+  region: "Bodensee",
+
+  tags: ["reserve", "regional"],
+},
+
+// COGNAC & ARMAGNAC
+
+{
+  id: 13700,
+  name: "Cognac Single Cask XO Silver",
+  year: 1999,
+
+  category: "Cognac",
+  producer: "Château Montifaud",
+
+  volume: "2cl",
+  price: 15.9,
+
+  origin: "France",
+
+  featured: true,
+
+  tags: ["xo", "single-cask", "premium"],
+},
+
+{
+  id: 13701,
+  name: "Cognac Majestic XO",
+
+  category: "Cognac",
+  producer: "Château Montifaud",
+
+  volume: "2cl",
+  price: 19.9,
+
+  origin: "France",
+
+  featured: true,
+
+  tags: ["xo", "luxury", "premium"],
+},
+
+{
+  id: 13702,
+  name: "Cognac XO",
+
+  category: "Cognac",
+  producer: "Château Montifaud",
+
+  volume: "2cl",
+  price: 9.3,
+
+  origin: "France",
+
+  tags: ["xo"],
+},
+
+{
+  id: 13703,
+  name: "Cognac VSOP",
+
+  category: "Cognac",
+  producer: "Château Montifaud",
+
+  volume: "2cl",
+  price: 7.2,
+
+  origin: "France",
+
+  tags: ["vsop"],
+},
+
+{
+  id: 13704,
+  name: "Bas Armagnac XO",
+
+  category: "Armagnac",
+  producer: "Dartigalongue",
+
+  volume: "2cl",
+  price: 8.3,
+
+  origin: "France",
+
+  tags: ["xo", "armagnac"],
+},
+
+{
+  id: 13705,
+  name: "Bas Armagnac VSOP",
+
+  category: "Armagnac",
+  producer: "Dartigalongue",
+
+  volume: "2cl",
+  price: 6.2,
+
+  origin: "France",
+
+  tags: ["vsop", "armagnac"],
+},
+{
+  id: 13300,
+  name: "Haselnuss Likör",
+
+  category: "Liqueur",
+  producer: "Senft",
+
+  volume: "2cl",
+  price: 6.1,
+
+  origin: "Germany",
+  region: "Bodensee",
+
+  tags: ["hazelnut", "liqueur"],
+},
+
+{
+  id: 13301,
+  name: "Zwetschgen Likör",
+
+  category: "Liqueur",
+  producer: "Senft",
+
+  volume: "2cl",
+  price: 6.1,
+
+  origin: "Germany",
+  region: "Bodensee",
+
+  tags: ["plum", "liqueur"],
+},
+
+{
+  id: 13302,
+  name: "Eierlikör",
+
+  category: "Liqueur",
+  producer: "Senft",
+
+  volume: "2cl",
+  price: 6.1,
+
+  origin: "Germany",
+
+  tags: ["egg-liqueur", "sweet"],
+},
+
+{
+  id: 13303,
+  name: "Schokoladen Likör",
+
+  category: "Liqueur",
+  producer: "Senft",
+
+  volume: "2cl",
+  price: 6.6,
+
+  origin: "Germany",
+
+  tags: ["chocolate", "sweet"],
+},
+
+{
+  id: 13304,
+  name: "Baileys",
+
+  category: "Liqueur",
+
+  volume: "4cl",
+  price: 5.1,
+
+  origin: "Ireland",
+
+  tags: ["cream", "coffee", "sweet"],
+},
+
+{
+  id: 13305,
+  name: "Amaretto",
+
+  category: "Liqueur",
+
+  volume: "2cl",
+  price: 4.4,
+
+  origin: "Italy",
+
+  tags: ["almond", "sweet"],
+},
 ]
-
 export const beers = [
   {
-    id: 1,
+    id: 12000,
     name: "Hirsch Pils",
+
     category: "Beer",
-    price: 4.4,
+    style: "Pils",
+
+    draft: true,
+
+    prices: [
+      { volume: "0.3l", price: 4.4 },
+      { volume: "0.4l", price: 5.1 },
+    ],
   },
 
   {
-    id: 2,
+    id: 12001,
     name: "Hirsch Export",
+
     category: "Beer",
-    price: 4.4,
+    style: "Export",
+
+    draft: true,
+
+    prices: [
+      { volume: "0.3l", price: 4.4 },
+      { volume: "0.5l", price: 5.1 },
+    ],
   },
 
   {
-    id: 3,
-    name: "Hirsch Hefeweizen",
+    id: 12002,
+    name: "Hirsch Hell Alkoholfrei",
+
     category: "Beer",
-    price: 4.8,
+    style: "Hell",
+
+    alcoholFree: true,
+
+    prices: [
+      { volume: "0.33l", price: 4.6 },
+    ],
+  },
+
+  {
+    id: 12003,
+    name: "Hirsch Hefeweizen",
+
+    category: "Beer",
+    style: "Hefeweizen",
+
+    draft: true,
+
+    prices: [
+      { volume: "0.3l", price: 4.8 },
+      { volume: "0.5l", price: 5.9 },
+    ],
+  },
+
+  {
+    id: 12004,
+    name: "Hirsch Hefeweizen Dunkel",
+
+    category: "Beer",
+    style: "Hefeweizen Dunkel",
+
+    prices: [
+      { volume: "0.5l", price: 5.9 },
+    ],
+  },
+
+  {
+    id: 12005,
+    name: "Hirsch Hefeweizen Alkoholfrei",
+
+    category: "Beer",
+    style: "Hefeweizen",
+
+    alcoholFree: true,
+
+    prices: [
+      { volume: "0.5l", price: 5.9 },
+    ],
   },
 ]
-
-export const cigars = [
-  {
-    id: 1,
-    name: "Aladino Fuma Noche",
-    category: "Cigar",
-    price: 19.9,
-  },
-
-  {
-    id: 2,
-    name: "Tatascan Connecticut Robusto",
-    category: "Cigar",
-    price: 8.9,
-  },
-
-  {
-    id: 3,
-    name: "Rojas Street Tacos Barbacoa",
-    category: "Cigar",
-    price: 9.9,
-  },
+export const drinks = [
+  ...softDrinks,
+  ...aperitifs,
+  ...spritz,
+  ...ginTonics,
+  ...refreshing,
+  ...cocktails,
+  ...sours,
+  ...negronis,
+  ...longdrinks,
+  ...alcoholFreeCocktails,
+  ...fortifiedWines,
+  ...spirits,
+  ...beers,
 ]

@@ -12,27 +12,68 @@ export default function App() {
 
   const [searchTerm, setSearchTerm] = useState("")
 
-  const categories = [
+  const [showAdvancedFilters, setShowAdvancedFilters] =
+    useState(false)
+
+  const basicCategories = [
     "All drinks",
+    "Featured",
     "Cocktail",
-    "Refreshing",
     "Spritz",
-    "Sour",
-    "Negroni",
     "Longdrink",
     "Alcohol Free",
-    "Summer Cocktail",
-    "Gin",
-    "Rum",
-    "Whisky",
     "Beer",
-    "Cigar",
+    "Spirits",
   ]
+
+  const advancedCategories = [
+    ...new Set(
+      drinks
+        .map((drink) => drink.category)
+        .filter(Boolean)
+        .sort()
+    ),
+  ]
+
+  const categories = showAdvancedFilters
+    ? ["All drinks", ...advancedCategories]
+    : basicCategories
 
   const filteredDrinks = drinks.filter((drink) => {
 
     const matchesCategory =
-      selectedCategory === "All drinks" ||
+
+      selectedCategory === "All drinks"
+
+      ||
+
+      (
+        selectedCategory === "Featured" &&
+        drink.featured
+      )
+
+      ||
+
+      (
+        selectedCategory === "Spirits" &&
+        [
+          "Rum",
+          "Whisky",
+          "Vodka",
+          "Liqueur",
+          "Bitter",
+          "Amaro",
+          "Fruit Brandy",
+          "Grappa",
+          "Marc",
+          "Cognac",
+          "Armagnac",
+          "Port Wine",
+        ].includes(drink.category)
+      )
+
+      ||
+
       drink.category === selectedCategory
 
     const matchesSearch =
@@ -89,7 +130,7 @@ export default function App() {
           md:w-96
           px-4
           py-3
-          mb-8
+          mb-6
           rounded-full
           bg-zinc-900
           text-white
@@ -99,6 +140,27 @@ export default function App() {
           focus:border-amber-500
         "
       />
+
+      <button
+        onClick={() =>
+          setShowAdvancedFilters(!showAdvancedFilters)
+        }
+        className="
+          mb-8
+          bg-amber-500
+          text-black
+          px-4
+          py-2
+          rounded-full
+          font-semibold
+          hover:opacity-90
+          transition
+        "
+      >
+        {showAdvancedFilters
+          ? "Basic Filters"
+          : "Advanced Filters"}
+      </button>
 
       <div className="flex flex-wrap gap-4 mb-10">
 
