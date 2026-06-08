@@ -2518,7 +2518,7 @@ export const spirits = [
   origin: "Germany",
 
   tags: ["egg-liqueur", "sweet"],
-    image:"",
+    image:"https://www.senft-destillerie.de/media/ea/84/6d/1730122161/SENFT-Eierlikoer-Liebling-Produktbild.webp?ts=1733482401",
 },
 
 {
@@ -2534,7 +2534,7 @@ export const spirits = [
   origin: "Germany",
 
   tags: ["chocolate", "sweet"],
-    image:"https://www.senft-destillerie.de/media/ea/84/6d/1730122161/SENFT-Eierlikoer-Liebling-Produktbild.webp?ts=1733482401",
+    image:"https://www.senft-destillerie.de/media/05/61/3a/1730122260/SENFT-Schokoladenlikoer-Liebling-Produktbild.webp?ts=1733482401",
 },
 
 {
@@ -2628,7 +2628,7 @@ export const beers = [
       { volume: "0.3l", price: 4.8 },
       { volume: "0.5l", price: 5.9 },
     ],
-      image:"",
+      image:"https://www.bierentdecker.com/images/default-source/bierwissen/weizen-bier.jpg?sfvrsn=b437a2f9_0",
   },
 
   {
@@ -2641,7 +2641,7 @@ export const beers = [
     prices: [
       { volume: "0.5l", price: 5.9 },
     ],
-      image:"https://www.bierentdecker.com/images/default-source/bierwissen/weizen-bier.jpg?sfvrsn=b437a2f9_0",
+      image:"https://www.hirsch-fanshop.de/media/catalog/product/cache/552a6c31827371ee8343397fdbf219c7/h/i/hirsch_brauerei_honer_hirsch_dunkle-weisse_ebs_1.png",
   },
 
   {
