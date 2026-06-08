@@ -2041,6 +2041,7 @@ export const spirits = [
   origin: "Germany",
 
   tags: ["premium"],
+  image:"https://www.weinquelle.com/fotos/s13315.png",
 },
 
 {
@@ -2057,7 +2058,7 @@ export const spirits = [
   featured: true,
 
   tags: ["plum", "premium"],
-  image:"https://cdn.idealo.com/folder/Product/2190/9/2190983/s1_produktbild_gross_2/scheibel-alte-zeit-zibaertle-brand-wildpflaume-0-7l-45.jpg",
+  image:"https://www.scheibel-brennerei.de/wp-content/uploads/2024/06/scheibel-alte-zeit-gelbe-bergpflaume-700ml-054254-1.png",
 },
 
 {
