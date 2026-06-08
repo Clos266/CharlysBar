@@ -1943,6 +1943,7 @@ export const spirits = [
   region: "Bodensee",
 
   tags: ["mirabelle", "fruit-brandy"],
+  image: "https://www.senft-destillerie.de/media/f4/93/d0/1730130145/SENFT-Mirabelle-Frucht-Selektion-Produktbild.webp?ts=1733482070",
 },
 
 {
@@ -1958,6 +1959,7 @@ export const spirits = [
   region: "Bodensee",
 
   tags: ["pear", "fruit-brandy"],
+  image: "https://brandgeister.de/wp-content/uploads/2024/10/Senft-Williams-Selektion-Bild-700x875.jpg",
 },
 
 {
@@ -1973,6 +1975,7 @@ export const spirits = [
   region: "Bodensee",
 
   tags: ["raspberry", "geist"],
+  image:"https://www.senft-destillerie.de/media/40/73/83/1730130357/SENFT-Himbeergeist-Selektion-Produktbild.webp?ts=1733482070",
 },
 
 {
@@ -1988,6 +1991,7 @@ export const spirits = [
   region: "Bodensee",
 
   tags: ["plum", "fruit-brandy"],
+  image:"https://www.senft-destillerie.de/media/87/a0/2b/1730122005/SENFT-Zwetschgen-Likoer-035-Produktbild.webp?ts=1733482184",
 },
 
 {
@@ -2003,6 +2007,7 @@ export const spirits = [
   region: "Bodensee",
 
   tags: ["cherry", "fruit-brandy"],
+  image:"https://www.senft-destillerie.de/media/e6/d3/d2/1730130729/SENFT-Bodensee-Kirschwasser-Produktbild.webp?ts=1733482848",
 },
 
 // FRUIT BRANDY - SCHEIBEL
@@ -2021,6 +2026,7 @@ export const spirits = [
   featured: true,
 
   tags: ["raspberry", "premium"],
+  image:"https://www.weinquelle.com/fotos_gross/s13312.jpg",
 },
 
 {
@@ -2051,6 +2057,7 @@ export const spirits = [
   featured: true,
 
   tags: ["plum", "premium"],
+  image:"https://cdn.idealo.com/folder/Product/2190/9/2190983/s1_produktbild_gross_2/scheibel-alte-zeit-zibaertle-brand-wildpflaume-0-7l-45.jpg",
 },
 
 {
@@ -2065,6 +2072,7 @@ export const spirits = [
   origin: "Germany",
 
   tags: ["hazelnut"],
+  image:"https://www.scheibel-brennerei.de/wp-content/uploads/2024/10/Scheibel-Edles-Fass-Haselnuss-700ml-054308-NEU-IWSC2024.png",
 },
 
 // FRUIT BRANDY - SPIRITUS REX
@@ -2081,6 +2089,7 @@ export const spirits = [
   price: 17.4,
 
   tags: ["blood-orange", "premium"],
+  image: "https://shop.spiritus-rex.de/cdn/shop/products/bloody-o-flasche_900x.jpg?v=1582713112",
 },
 
 {
@@ -2095,6 +2104,7 @@ export const spirits = [
   price: 19.4,
 
   tags: ["grapefruit", "premium"],
+  image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrRlUB37A4fA3NY3XWKMndn7CT8-0yPXq3XQ&s",
 },
 
 {
@@ -2109,6 +2119,7 @@ export const spirits = [
   price: 19.4,
 
   tags: ["mandarin", "premium"],
+  image:"https://www.weinquelle.com/fotos_gross/s26841.jpg",
 },
 
 {
@@ -2123,6 +2134,7 @@ export const spirits = [
   price: 19.4,
 
   tags: ["cherry", "premium"],
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQduBMg3koZXX8Hbo_jIFIjy5dS_HhknMxBvA&s",
 },
 
 {
@@ -2137,6 +2149,7 @@ export const spirits = [
   price: 19.4,
 
   tags: ["cactus-pear", "premium"],
+    image:"https://shop.spiritus-rex.de/cdn/shop/files/Kaktusfeige_F_2023_1200x1200.jpg?v=1701087096",
 },
 
 {
@@ -2151,6 +2164,7 @@ export const spirits = [
   price: 19.4,
 
   tags: ["apricot", "premium"],
+    image:"https://shop.spiritus-rex.de/cdn/shop/products/Mar_1200x1200.jpg?v=1613385218",
 },
 
 {
@@ -2165,6 +2179,7 @@ export const spirits = [
   price: 19.4,
 
   tags: ["lemon", "premium"],
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuBbDAipnUDssgVTjxDXBg0p5M9XoRLvRcEQ&s",
 },
 
 {
@@ -2179,6 +2194,7 @@ export const spirits = [
   price: 19.4,
 
   tags: ["hazelnut", "premium"],
+    image:"https://shop.spiritus-rex.de/cdn/shop/files/Haselnuss_Noeoet_4afbb4fd-70df-4a46-b554-98a2a142600a_900x.jpg?v=1696169278",
 },
 
 // ETTER
@@ -2195,6 +2211,7 @@ export const spirits = [
   origin: "Switzerland",
 
   tags: ["plum"],
+    image:"https://brandgeister.de/wp-content/uploads/2024/10/Etter-Vieille-Prune.jpg",
 },
 
 {
@@ -2209,6 +2226,7 @@ export const spirits = [
   origin: "Switzerland",
 
   tags: ["orange"],
+    image:"https://brandgeister.de/wp-content/uploads/2024/10/Etter-Vieille-Orange.jpg",
 },
 // GRAPPA & TRESTERBRÄNDE
 
@@ -2224,6 +2242,7 @@ export const spirits = [
   origin: "Italy",
 
   tags: ["prosecco", "grappa"],
+    image:"https://m.media-amazon.com/images/I/61uf5YBk4RL._AC_UF1000,1000_QL80_.jpg",
 },
 
 {
@@ -2242,6 +2261,7 @@ export const spirits = [
   featured: true,
 
   tags: ["barolo", "riserva", "premium"],
+    image:"https://distilleriaalpina.it/images/prodotti/scheda/268_10_barolo_riserva_2001_barolo_barrique.png",
 },
 
 {
@@ -2258,6 +2278,7 @@ export const spirits = [
   origin: "Italy",
 
   tags: ["aged", "grappa"],
+    image:"https://www.worldshop.eu/medias/img/8931347890206_w1500_z_6830532/grappa-nonino-riserva-antica-cuvee-0-7l-43-0-abv-italy.jpeg",
 },
 
 {
@@ -2276,6 +2297,7 @@ export const spirits = [
   featured: true,
 
   tags: ["riserva", "aged", "premium"],
+    image:"https://www.grappa.de/pic/9496_1.jpg",
 },
 
 {
@@ -2293,6 +2315,7 @@ export const spirits = [
   abv: 50,
 
   tags: ["strong", "riserva"],
+    image:"https://shop.klauss.de/cdn/shop/files/grappa-nardini-riserva-1-liter.jpg?v=1747734290&width=1000",
 },
 
 {
@@ -2309,6 +2332,7 @@ export const spirits = [
   region: "Bodensee",
 
   tags: ["marc", "regional"],
+    image:"https://www.senft-destillerie.de/media/10/a8/00/1730130715/SENFT-Bodensee-Marc-Produktbild.webp?ts=1733482848",
 },
 
 // VODKA
@@ -2325,6 +2349,7 @@ export const spirits = [
   origin: "Sweden",
 
   tags: ["classic", "vodka"],
+    image:"https://www.mygourmet24.de/media/image/product/999/lg/absolut-vodka-400-vol-10-liter.png",
 },
 
 {
@@ -2341,6 +2366,7 @@ export const spirits = [
   region: "Bodensee",
 
   tags: ["reserve", "regional"],
+    image:"https://www.rumundco.de/media/21/c8/78/1751027664/unbekannt_3ff887f5f922f47b.png",
 },
 
 // COGNAC & ARMAGNAC
@@ -2361,6 +2387,7 @@ export const spirits = [
   featured: true,
 
   tags: ["xo", "single-cask", "premium"],
+    image:"https://www.wein-riegger.de/media/8f/63/ca/1685568916/montifaud_xo_silver_1999_viktor_riegger-090264e463.jpg?ts=1685568916",
 },
 
 {
@@ -2378,6 +2405,7 @@ export const spirits = [
   featured: true,
 
   tags: ["xo", "luxury", "premium"],
+    image:"https://www.wein-riegger.de/media/0f/01/3e/1706894777/Montifaud_XO_Majestic_in_Box-11411.webp?ts=1706894777",
 },
 
 {
@@ -2393,6 +2421,7 @@ export const spirits = [
   origin: "France",
 
   tags: ["xo"],
+    image:"https://wein-kunst.net/wp-content/uploads/2024/09/xo_ariane.png",
 },
 
 {
@@ -2408,6 +2437,7 @@ export const spirits = [
   origin: "France",
 
   tags: ["vsop"],
+    image:"https://www.magevin.de/media/image/product/211/md/halbe-chateau-montifaud-cognac-vsop-035.jpg",
 },
 
 {
@@ -2423,6 +2453,7 @@ export const spirits = [
   origin: "France",
 
   tags: ["xo", "armagnac"],
+    image:"https://static.cognac-expert.com/16152-large_default/dartigalongue-xo-signature-armagnac.webp",
 },
 
 {
@@ -2438,6 +2469,7 @@ export const spirits = [
   origin: "France",
 
   tags: ["vsop", "armagnac"],
+    image:"https://static.cognac-expert.com/15981-thickbox_default/dartigalongue-vsop-armagnac.webp",
 },
 {
   id: 13300,
@@ -2453,6 +2485,7 @@ export const spirits = [
   region: "Bodensee",
 
   tags: ["hazelnut", "liqueur"],
+    image:"https://www.senft-destillerie.de/media/2c/6f/74/1730121976/SENFT-Haselnuss-Likoer-Produktbild.webp?ts=1760440211",
 },
 
 {
@@ -2469,6 +2502,7 @@ export const spirits = [
   region: "Bodensee",
 
   tags: ["plum", "liqueur"],
+    image:"https://www.senft-destillerie.de/media/67/7b/b9/1730122026/SENFT-Zwetschgen-Likoer-07-Produktbild.webp?ts=1733482184",
 },
 
 {
@@ -2484,6 +2518,7 @@ export const spirits = [
   origin: "Germany",
 
   tags: ["egg-liqueur", "sweet"],
+    image:"",
 },
 
 {
@@ -2499,6 +2534,7 @@ export const spirits = [
   origin: "Germany",
 
   tags: ["chocolate", "sweet"],
+    image:"https://www.senft-destillerie.de/media/ea/84/6d/1730122161/SENFT-Eierlikoer-Liebling-Produktbild.webp?ts=1733482401",
 },
 
 {
@@ -2513,6 +2549,7 @@ export const spirits = [
   origin: "Ireland",
 
   tags: ["cream", "coffee", "sweet"],
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Glass_of_Baileys.jpg/250px-Glass_of_Baileys.jpg",
 },
 
 {
@@ -2527,6 +2564,7 @@ export const spirits = [
   origin: "Italy",
 
   tags: ["almond", "sweet"],
+    image:"https://static.tastingcollection.com/media/wysiwyg/attributepages/Disaronno-Likeur-Voordelig-Online-Kopen.jpg",
 },
 ]
 export const beers = [
@@ -2543,6 +2581,7 @@ export const beers = [
       { volume: "0.3l", price: 4.4 },
       { volume: "0.4l", price: 5.1 },
     ],
+      image:"https://www.hirsch-fanshop.de/media/catalog/product/cache/552a6c31827371ee8343397fdbf219c7/h/i/hirsch_honer_glas_pilstulpe.png",
   },
 
   {
@@ -2558,6 +2597,7 @@ export const beers = [
       { volume: "0.3l", price: 4.4 },
       { volume: "0.5l", price: 5.1 },
     ],
+      image:"https://image.stern.de/7961290/t/07/v2/w1440/r1.3333/-/bier.jpg",
   },
 
   {
@@ -2572,6 +2612,7 @@ export const beers = [
     prices: [
       { volume: "0.33l", price: 4.6 },
     ],
+      image:"https://www.hirsch-fanshop.de/media/catalog/product/cache/552a6c31827371ee8343397fdbf219c7/h/i/hirsch_brauerei_honer_hirsch_helles_alkoholfrei.png",
   },
 
   {
@@ -2587,6 +2628,7 @@ export const beers = [
       { volume: "0.3l", price: 4.8 },
       { volume: "0.5l", price: 5.9 },
     ],
+      image:"",
   },
 
   {
@@ -2599,6 +2641,7 @@ export const beers = [
     prices: [
       { volume: "0.5l", price: 5.9 },
     ],
+      image:"https://www.bierentdecker.com/images/default-source/bierwissen/weizen-bier.jpg?sfvrsn=b437a2f9_0",
   },
 
   {
@@ -2613,6 +2656,7 @@ export const beers = [
     prices: [
       { volume: "0.5l", price: 5.9 },
     ],
+      image:"https://www.hirsch-fanshop.de/media/catalog/product/cache/552a6c31827371ee8343397fdbf219c7/h/i/hirschbrauerei_honer__hefeweisse_alkoholfrei_wba_1.png",
   },
 ]
 export const drinks = [
